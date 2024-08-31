@@ -8,8 +8,8 @@ export const Services: React.FC = () => {
             <div className=" h-auto bg-elite-blue py-24  lg:px-32 sm:px-8 px-2">
                 <div className="w-full  mb-12">
                     <h1 className="font-semibold text-md mb-4 text-white">Services</h1>
-                    <div className="text-white  flex justify-between">
-                        <div className="text-4xl">
+                    <div className="text-white  flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <div className=" md:text-4xl sm:text-3xl text-xl">
                             <h1>Easy and Fast Print Customization </h1>
                             <h1>with Digital Print Services</h1>
                         </div>

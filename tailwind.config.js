@@ -11,7 +11,8 @@ export default {
         
         "elite-orange": "#FF9247",
         "elite-green" : "#4EB542",
-        "elite-blue" : "#012069"
+        "elite-blue" : "#012069",
+        "Elite-voilet" : "#524BAD"
 
         
       },

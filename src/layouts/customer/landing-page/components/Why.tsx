@@ -6,7 +6,7 @@ export const Why: React.FC = () => {
         <>
             <div className="w-full h-fit mb-14 mt-14 md:mt-0   ">
                 <div className=" w-full flex flex-col gap-1 text-black text-center ">
-                    <h1 className="font-semibold text-sm">Why?</h1>
+                <h1 className="md:font-bold font-semibold md:text-md text-sm ">Why?</h1>
                     <h1 className="text-4xl font-semibold">Fast, Cheap and High-Quality Digital</h1>
                     <h1 className="text-4xl font-semibold ">Prints Why Not?</h1>
                 </div>

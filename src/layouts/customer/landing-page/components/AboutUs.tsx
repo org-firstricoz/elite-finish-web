@@ -7,7 +7,7 @@ export const AboutUs: React.FC = () => {
         <>
             <div className="relative w-full min-h-screen h-auto grid grid-cols-12  items-center lg:px-32 sm:px-8 px-2 ">
                <Shape variant="halfCircleGreen" className="h-24 top-[10.5rem]"/>
-                <div className="relative md:col-span-6 col-span-12 flex items-center   ">
+                <div className="relative md:col-span-6 col-span-12 flex items-center  justify-center md:justify-start  ">
                     <Shape variant="triangleGreen" className=" right-[9.4rem]"/>
 
                     <div className="h-[28rem] w-[28rem] bg-gray-300 z-50 ">
@@ -15,10 +15,9 @@ export const AboutUs: React.FC = () => {
                     </div>
                 </div>
                 <div className="relative md:col-span-6 col-span-12 h-full flex items-center justify-center ">
-                    <Shape variant="brokeCircleVoilet" className="z-[-1] top-36 left-12"/>
                      <div className="flex flex-col gap-5 ">
                         <h1 className="font-medium">About Us</h1>
-                        <div className="font-semibold text-5xl">
+                        <div className="font-semibold md:text-4xl lg:text-5xl sm:text-3xl text-2xl">
                         <h1>Experience the Power </h1>
                         <h1>of Digital Printing</h1>
                         </div>
