@@ -3,7 +3,7 @@ import { cn } from "../../../../utils";
 
 type ShapeProps = {
     className?: string;
-    variant? : "null" | "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon" | "callIcon" | "messageIcon" | "locationIcon" | "graySignIcon" | "playIcon" | "companyLogo1" | "companyLogo2" | "companyLogo3" | "companyLogo4" | "brokenCircleGreen";
+    variant? : "null" | "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon" | "callIcon" | "messageIcon" | "locationIcon" | "graySignIcon" | "playIcon" | "companyLogo1" | "companyLogo2" | "companyLogo3" | "companyLogo4" | "brokenCircleGreen" | "triangleOrange" | "circleOrange";
   };
   
 export const Shape:React.FC<ShapeProps> = ({className,variant}) => {
@@ -204,6 +204,43 @@ export const Shape:React.FC<ShapeProps> = ({className,variant}) => {
           className="pointer-events-none"
           src="/public/assets/logodemo4.svg"
           alt="logo_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+    if(variant == "brokenCircleGreen"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/brokenCircleGreen.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "triangleOrange"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/TriangleOrange.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+    if(variant == "circleOrange"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/circleOrange.svg"
+          alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
       </div>

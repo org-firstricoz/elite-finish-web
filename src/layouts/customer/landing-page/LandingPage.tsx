@@ -4,7 +4,6 @@ import { AboutUs } from "./components/AboutUs"
 import { Why } from "./components/Why"
 import { Services } from "./components/Services"
 import { EliteCommon } from "../../../components/EliteCommon"
-import { Footer } from "./components/Footer"
 import { Team } from "./components/Team"
 import Testonomial from "./components/Testonomial"
 import Pricing from "./components/Pricing"
@@ -26,7 +25,6 @@ const LandingPage: React.FC = () => {
       <Pricing />
       <Testonomial />
       <Blog />
-      <Footer />
     </>
   )
 }

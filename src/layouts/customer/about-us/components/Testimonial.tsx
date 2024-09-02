@@ -1,7 +1,6 @@
-import React from "react"
 import TestonomialSection from "../../../../components/EliteTestimonial/EliteTestimonial"
 
-const Testonomial: React.FC = () => {
+const Testimonial = () => {
     return (
         <>
             <TestonomialSection
@@ -16,4 +15,4 @@ const Testonomial: React.FC = () => {
         </>
     )
 }
-export default Testonomial
+export default Testimonial

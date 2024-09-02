@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { NotFoundPage } from "../layouts/customer/notFound";
 import { CUSTOMER_ROUTES } from "./constants";
 import Navbar from "../layouts/customer/landing-page/components/Navbar";
+import { Footer } from "../layouts/customer/landing-page/components/Footer";
 
 
 
@@ -22,6 +23,7 @@ const Router: React.FC = () => {
           ))}
 
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 };

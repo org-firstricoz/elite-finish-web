@@ -1,3 +1,5 @@
-import About from './AboutUs';
+import AboutUs from "./AboutUs";
+import AboutPage from "./AboutUs";
+import { Why } from "./components/Why";
 
-export { About, }
+export { AboutPage, AboutUs, Why };
