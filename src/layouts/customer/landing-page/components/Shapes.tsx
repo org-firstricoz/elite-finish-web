@@ -3,10 +3,15 @@ import { cn } from "../../../../utils";
 
 type ShapeProps = {
     className?: string;
-    variant? : "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon" ;
+    variant? : "null" | "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon" | "callIcon" | "messageIcon" | "locationIcon" | "graySignIcon" | "playIcon" | "companyLogo1" | "companyLogo2" | "companyLogo3" | "companyLogo4" | "brokenCircleGreen" | "triangleOrange" | "circleOrange";
   };
   
 export const Shape:React.FC<ShapeProps> = ({className,variant}) => {
+
+
+  if(variant == "null"){
+    return     
+}
 
     if(variant == "triangleGreen"){
         return (
@@ -77,21 +82,176 @@ export const Shape:React.FC<ShapeProps> = ({className,variant}) => {
     }
 
     if(variant == "arrowDownIcon"){
-        return (
-            <img 
-            className={cn(" ", className)}
-            src="/public/assets/arrowDown.svg" 
-            alt="arrowDown_icon" />
-          )
+      return (
+        <div className={cn("relative", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/arrowDown.svg"
+          alt="arrowup_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
     }
 
-    if(variant == "arrowUpIcon"){
-        return (
-            <img 
-            className={cn(" ", className)}
-            src="/public/assets/arrowUp.svg" 
-            alt="arrowup_icon" />
-          )
+    if(variant == "callIcon"){
+      return (
+        <div className={cn("relative", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/callIcon.svg"
+          alt="call_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
     }
+
+    if(variant == "messageIcon"){
+      return (
+        <div className={cn("relative", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/messageIcon.svg"
+          alt="message_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "locationIcon"){
+      return (
+        <div className={cn("relative", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/locationIcon.svg"
+          alt="location_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "graySignIcon"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/graySign.svg"
+          alt="graySign_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+    if(variant == "playIcon"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/play.svg"
+          alt="play_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "companyLogo1"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/logodemo1.svg"
+          alt="logo_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "companyLogo2"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/logodemo2.svg"
+          alt="logo_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "companyLogo3"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/logodemo3.svg"
+          alt="logo_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "companyLogo4"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/logodemo4.svg"
+          alt="logo_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+    if(variant == "brokenCircleGreen"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/brokenCircleGreen.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "triangleOrange"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/TriangleOrange.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+    if(variant == "circleOrange"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/circleOrange.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+
+    
+
+
+    
+    
  
 }

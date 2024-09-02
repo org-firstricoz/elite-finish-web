@@ -1,5 +1,5 @@
 import React from "react"
-import { Shape } from "./Shapes"
+import { Shape } from "../../landing-page/components/Shapes"
 
 export const Why: React.FC = () => {
     return (
