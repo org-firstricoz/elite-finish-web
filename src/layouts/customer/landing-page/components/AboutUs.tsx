@@ -5,7 +5,7 @@ import EliteButton from "../../../../components/EliteButton"
 export const AboutUs: React.FC = () => {
     return (
         <>
-            <div className="relative w-full min-h-screen h-auto grid grid-cols-12  items-center lg:px-32 sm:px-8 px-2 ">
+            <div className="relative w-full min-h-screen h-auto grid grid-cols-12 md:pt-0 pt-12  items-center lg:px-32 sm:px-8 px-2 ">
                <Shape variant="halfCircleGreen" className="h-24 top-[10.5rem]"/>
                 <div className="relative md:col-span-6 col-span-12 flex items-center  justify-center md:justify-start  ">
                     <Shape variant="triangleGreen" className=" right-[9.4rem]"/>
@@ -14,9 +14,9 @@ export const AboutUs: React.FC = () => {
                         {/* image placeholder */}
                     </div>
                 </div>
-                <div className="relative md:col-span-6 col-span-12 h-full flex items-center justify-center ">
+                <div className="relative md:col-span-6 col-span-12 h-full  md:py-0 py-8 flex items-center justify-center px-4 ">
                      <div className="flex flex-col gap-5 ">
-                        <h1 className="font-medium">About Us</h1>
+                        <h1 className="font-semibold md:text-lg text-sm mb-4">About Us</h1>
                         <div className="font-semibold md:text-4xl lg:text-5xl sm:text-3xl text-2xl">
                         <h1>Experience the Power </h1>
                         <h1>of Digital Printing</h1>

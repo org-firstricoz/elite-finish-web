@@ -16,7 +16,7 @@ export const Team: React.FC = () => {
                         </div>
                         <div className="col-span-1 w-full h-full flex justify-center items-center flex-col  ">
                             <div className="">
-                                <h1 className="md:font-bold font-semibold md:text-md text-sm ">Our Team</h1>
+                                <h1 className="font-semibold md:text-lg text-sm mb-4">Our Team</h1>
                                 <div className="lg:text-4xl md:text-3xl sm:text-2xl font-bold sm:font-semibold">
                                     <h1 >Unlimited Creativity</h1>
                                     <h1 > With Our Professional </h1>

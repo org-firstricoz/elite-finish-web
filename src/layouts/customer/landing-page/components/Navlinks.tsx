@@ -14,8 +14,12 @@ export const NAVLINKS = [
     href: "/about",
   },
   {
-    title: "Help",
-    href: "/help",
+    title: "Services",
+    href: "/services",
+  },
+  {
+    title: "Page",
+    href: "/page",
   },
   {
     title: "Contact Us",

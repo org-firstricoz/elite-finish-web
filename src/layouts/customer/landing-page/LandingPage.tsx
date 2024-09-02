@@ -11,11 +11,12 @@ import { Team } from "./components/Team"
 import Testonomial from "./components/Testonomial"
 import Pricing from "./components/Pricing"
 import Gallery from "./components/Gallery"
+import Blog from "./components/Blog"
 
 const LandingPage: React.FC = () => {
   return (
     <>
-      <div className="   min-h-screen md:h-[115vh] h-auto overflow-hidden">
+      <div className="   min-h-screen md:h-[115vh] h-auto overflow-hidden ">
         <div className="bg-elite-blue h-screen ">
           <Navbar />
           <div className="grid grid-cols-12 ">
@@ -33,10 +34,10 @@ const LandingPage: React.FC = () => {
 
 
             </div>
-            <div className="md:col-span-6 hidden md:flex ">
-              <div className="w-full flex   ">
+            <div className="md:col-span-6 hidden md:flex md:ps- lg:ps-20   lg:pe-32 sm:pe-8 pe-2">
+              <div className="w-full flex justify-end">
                 <img
-                  className="h-[104vh]"
+                  className="min-h-[104vh] w-full h-auto object-cover"
                   src="/assets/landingimage.png" />
 
               </div>
@@ -53,6 +54,7 @@ const LandingPage: React.FC = () => {
       <Gallery/>
       <Pricing/>
       <Testonomial/>
+      <Blog/>
       <Footer/>
     </>
   )

@@ -19,7 +19,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
 ) => {
     return (
         <div className={` ${cardBg == "primary" ? "bg-Elite-voilet text-white " : "bg-white text-black  border-2"}
-        min-h-[70vh] h-auto w-[16rem] sm:w-full py-5 px-5  border-black flex flex-col gap-12 justify-center  items-center  `}>
+        min-h-[70vh] h-auto w-[19rem] sm:w-full py-5 px-5  border-black flex flex-col gap-12 justify-center  items-center  `}>
             <div className="flex flex-col  items-center justify-center ">
                 <h1 className="text-xs md:text-md lg:text-xl  font-semibold  text-center ">{heading}</h1>
                 <h1 className="font-semibold lg:text-xl md:text-lg sm:text-sm text-xs"> <span className="lg:text-5xl md:text-3xl sm:text-xl text-base ">${price}/</span>packages</h1>

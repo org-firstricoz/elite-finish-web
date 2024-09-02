@@ -3,7 +3,7 @@ import { cn } from "../../../../utils";
 
 type ShapeProps = {
     className?: string;
-    variant? : "null" | "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon" | "callIcon" | "messageIcon" | "locationIcon" | "graySignIcon" | "playIcon" ;
+    variant? : "null" | "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon" | "callIcon" | "messageIcon" | "locationIcon" | "graySignIcon" | "playIcon" | "companyLogo1" | "companyLogo2" | "companyLogo3" | "companyLogo4" ;
   };
   
 export const Shape:React.FC<ShapeProps> = ({className,variant}) => {
@@ -157,6 +157,59 @@ export const Shape:React.FC<ShapeProps> = ({className,variant}) => {
       </div>
         )
     }
+
+    if(variant == "companyLogo1"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/logodemo1.svg"
+          alt="logo_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "companyLogo2"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/logodemo2.svg"
+          alt="logo_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "companyLogo3"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/logodemo3.svg"
+          alt="logo_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "companyLogo4"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/logodemo4.svg"
+          alt="logo_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
 
     
 
