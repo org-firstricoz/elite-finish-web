@@ -1,11 +1,13 @@
+import  Router  from './routes/Router'
 import './App.css'
-import LandingPage from './layouts/customer/landing-page/LandingPage'
 
 function App() {
 
   return (
     <>
-      <LandingPage/>
+     <div>
+      <Router />
+    </div>
     </>
   )
 }

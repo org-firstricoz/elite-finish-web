@@ -3,7 +3,7 @@ import { cn } from "../../../../utils";
 
 type ShapeProps = {
     className?: string;
-    variant? : "null" | "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon" | "callIcon" | "messageIcon" | "locationIcon" | "graySignIcon" | "playIcon" | "companyLogo1" | "companyLogo2" | "companyLogo3" | "companyLogo4" ;
+    variant? : "null" | "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon" | "callIcon" | "messageIcon" | "locationIcon" | "graySignIcon" | "playIcon" | "companyLogo1" | "companyLogo2" | "companyLogo3" | "companyLogo4" | "brokenCircleGreen";
   };
   
 export const Shape:React.FC<ShapeProps> = ({className,variant}) => {

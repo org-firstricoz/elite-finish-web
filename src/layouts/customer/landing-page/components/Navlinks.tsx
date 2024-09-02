@@ -1,7 +1,7 @@
 
 import React from "react";
 
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { cn } from "../../../../utils";
 
 export const NAVLINKS = [
@@ -11,7 +11,7 @@ export const NAVLINKS = [
   },
   {
     title: "About Us",
-    href: "/about",
+    href: "/about-us",
   },
   {
     title: "Services",
@@ -28,19 +28,25 @@ export const NAVLINKS = [
 ];
 
 const Navlinks: React.FC = () => {
- 
     
-  // const currentUrl = useLocation().pathname;
+  const currentUrl = useLocation().pathname;
+  console.log('>>>>>>>>>>>', currentUrl)
   return (
+    
     <div className="md:flex hidden gap-12 items-center text-sm font font-[400] font-[18px] ">
       {NAVLINKS.map((link, i) => (
-        <a
-          className={cn("hover:text-elite-green py-3 text-white")}
+        <Link
+          className={cn("hover:text-elite-green py-3 text-white",
+            { 
+              "text-elite-green font-semibold":
+                currentUrl.endsWith(link.href),
+            }
+          )}
           key={`NAVLINK_${i}`}
-          href={link.href}
+          to={link.href}
         >
           {link.title}
-        </a>
+        </Link>
       ))}
 
     </div>
