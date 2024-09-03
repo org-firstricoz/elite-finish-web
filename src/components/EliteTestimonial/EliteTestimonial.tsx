@@ -22,8 +22,7 @@ const TestonomialSection: React.FC<TestomonialProps> = ({
         <div className=" h-auto min-h-screen w-full flex items-center md:py-0 py-20">
             <div className="grid grid-cols-12 gap-3 md:gap-0 w-full  min-h-[70vh] h-auto  lg:px-32 sm:px-8 px-2">
 
-                <div className=" md:col-span-7 col-span-12 md:order-1 order-2 h-full 
-                                flex flex-col md:gap-36 gap-5" >
+                <div className=" md:col-span-7 col-span-12 md:order-1 order-2 h-full flex flex-col md:gap-36 gap-5" >
                     <div>
                         <h1 className="font-semibold md:text-lg text-sm mb-4">{heading}</h1>
                         <div className="lg:text-4xl md:text-3xl sm:text-2xl text-2xl font-bold sm:font-semibold ">

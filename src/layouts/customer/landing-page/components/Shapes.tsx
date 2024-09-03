@@ -3,7 +3,7 @@ import { cn } from "../../../../utils";
 
 type ShapeProps = {
     className?: string;
-    variant? : "null" | "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon" | "callIcon" | "messageIcon" | "locationIcon" | "graySignIcon" | "playIcon" | "companyLogo1" | "companyLogo2" | "companyLogo3" | "companyLogo4" | "brokenCircleGreen" | "triangleOrange" | "circleOrange";
+    variant? : "null" | "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon" | "callIcon" | "messageIcon" | "locationIcon" | "graySignIcon" | "playIcon" | "companyLogo1" | "companyLogo2" | "companyLogo3" | "companyLogo4" | "brokenCircleGreen" | "triangleOrange" | "circleOrange" | "squareWhite" | "pathGreen" | "time" | "printer" | "docs2" | "docBinding" | "text" | "file";
   };
   
 export const Shape:React.FC<ShapeProps> = ({className,variant}) => {
@@ -234,6 +234,7 @@ export const Shape:React.FC<ShapeProps> = ({className,variant}) => {
       </div>
         )
     }
+
     if(variant == "circleOrange"){
       return (
         <div className={cn("", className)}>
@@ -246,6 +247,114 @@ export const Shape:React.FC<ShapeProps> = ({className,variant}) => {
       </div>
         )
     }
+
+    if(variant == "squareWhite"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/squareWhite.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "pathGreen"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/pathGreen.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "time"){
+      return (
+        <div className={cn("", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/time.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "printer"){
+      return (
+        <div className={cn("h-32 aspect-square ", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/printer.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "text"){
+      return (
+        <div className={cn("h-32 aspect-square ", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/text.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+
+    if(variant == "docs2"){
+      return (
+        <div className={cn("h-32 aspect-square  ", className)}>
+        <img
+          className="pointer-events-none"
+          src="/public/assets/docs2.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+
+    if(variant == "docBinding"){
+      return (
+        <div className={cn("h-32 aspect-square  ", className)}>
+        <img
+          className="pointer-events-none object-cover"
+          src="/public/assets/docBinding.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "file"){
+      return (
+        <div className={cn("h-32 aspect-square  ", className)}>
+        <img
+          className="pointer-events-none object-cover"
+          src="/public/assets/file.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+
 
 
     
