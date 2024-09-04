@@ -1,4 +1,4 @@
-import TestonomialSection from "../../../../components/EliteTestimonial/EliteTestimonial"
+import TestonomialSection from "../../../../components/EliteTestimonial"
 
 const Testimonial = () => {
     return (

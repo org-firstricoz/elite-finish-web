@@ -1,17 +1,16 @@
-import { EliteCommon } from "@/components"
+import { EliteCommon, HeroCommon } from "@/components"
 import TestonomialSection from "@/components/EliteTestimonial"
-import HeroServiceDetails from "./components/HeroServiceDetails"
-import DocPrinting from "./components/DocPrinting"
-import ServicesProvided from "./components/Provide"
-import Register from "./components/Register"
+import React from "react"
+import Faq from "./component/Faq"
 
-const ServiceDetailPage = () => {
+const FaqPage: React.FC = () => {
   return (
     <>
-      <HeroServiceDetails />
-      <DocPrinting />
-      <ServicesProvided />
-      <Register />
+      <HeroCommon
+        heading="FAQ"
+        description="Lorem ipsum dolor sit amet consectetur. Non commodo mi elit ut convallis. Tempor facilisi pellentesque sem praesent tortor venenatis. Diam volutpat interdum quis senectus. Quam eros nunc habitant placerat arcu accumsan."
+      />
+      <Faq />
       <EliteCommon />
       <TestonomialSection
         heading="Testimonials"
@@ -24,4 +23,4 @@ const ServiceDetailPage = () => {
     </>
   )
 }
-export default ServiceDetailPage
+export default FaqPage

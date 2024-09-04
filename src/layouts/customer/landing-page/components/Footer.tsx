@@ -3,14 +3,18 @@ import { Shape } from "./Shapes"
 import React from "react"
 
 type ShapeVariant = "callIcon" | "messageIcon" | "locationIcon" | "null" | "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon";
+
+
 const SERVICES = {
     id: 1,
     content: ["Digital Print", "Doc Print", "Shirt Print", "Sticker Print"]
 }
+
 const LINKS = {
     id: 2,
     content: ["Term of use", "Privacy Policy"]
 }
+
 const CONTACT = {
     id: 3,
     content: [

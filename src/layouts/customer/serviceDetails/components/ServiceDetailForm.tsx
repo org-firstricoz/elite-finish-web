@@ -1,11 +1,15 @@
 import Dropdown from "@/components/EliteDropDown"
 import Input from "@/components/EliteInput"
 import TextArea from "@/components/EliteTextArea";
-import React, { useEffect } from "react"
+import React from "react"
 import { Shape } from "../../landing-page/components/Shapes";
 import { EliteButton } from "@/components";
 
-const ServiceDetailForm: React.FC = () => {
+interface ServiceDetailFormProps {
+  showUploadFileButton: boolean;
+}
+
+const ServiceDetailForm: React.FC<ServiceDetailFormProps> = ({ showUploadFileButton }) => {
 
   const [selectedFile, setSelectedFile] = React.useState<File | null>(null);
 
@@ -15,7 +19,7 @@ const ServiceDetailForm: React.FC = () => {
     { value: "option3", label: "Option 3" },
   ];
 
-   const handleImageUpload = React.useCallback(() => {
+  const handleImageUpload = React.useCallback(() => {
     const input = document.createElement('input');
     input.setAttribute('type', 'file');
     input.setAttribute('accept', 'image/*');
@@ -26,9 +30,9 @@ const ServiceDetailForm: React.FC = () => {
     input.click();
   }, []);
 
-  React.useEffect(()=>{
+  React.useEffect(() => {
     console.log('>>>>>>>>>>>', selectedFile)
-  },[selectedFile])
+  }, [selectedFile])
 
   return (
 
@@ -62,7 +66,7 @@ const ServiceDetailForm: React.FC = () => {
         <Dropdown
           label="Services"
           options={options}
-          required 
+          required
           className=""
         />
       </div>
@@ -77,18 +81,22 @@ const ServiceDetailForm: React.FC = () => {
         />
       </div>
       <div className="col-span-12 flex flex-col gap-6">
-        <div className="flex gap-6 items-center">
-          <EliteButton
-            onClick={handleImageUpload}
-            variant="ternary" className="flex gap-4 border border-black">
-            Choose File
-            <Shape variant="file" className=" h-fit w-fit" />
-          </EliteButton>
-          {
-            !selectedFile &&
-          <h1>No file choosen</h1>
-          }
-        </div>
+        {showUploadFileButton && (
+          <>
+            <div className="flex gap-6 items-center">
+              <EliteButton
+                onClick={handleImageUpload}
+                variant="ternary"
+                className="flex gap-4 border border-black"
+              >
+                Choose File
+                <Shape variant="file" className="h-fit w-fit" />
+              </EliteButton>
+              {!selectedFile && <h1>No file chosen</h1>}
+            </div>
+          </>
+        )}
+
         <div>
           <EliteButton>Request Order</EliteButton>
         </div>

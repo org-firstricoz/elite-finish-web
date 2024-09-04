@@ -1,5 +1,5 @@
 import { EliteCommon, HeroCommon } from "@/components"
-import TestonomialSection from "@/components/EliteTestimonial/EliteTestimonial"
+import TestonomialSection from "@/components/EliteTestimonial"
 import React from "react"
 import PricingMain from "./component/PricingMain"
 

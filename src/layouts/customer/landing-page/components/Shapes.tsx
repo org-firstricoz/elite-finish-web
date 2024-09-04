@@ -3,7 +3,7 @@ import { cn } from "../../../../utils";
 
 type ShapeProps = {
     className?: string;
-    variant? : "null" | "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon" | "callIcon" | "messageIcon" | "locationIcon" | "graySignIcon" | "playIcon" | "companyLogo1" | "companyLogo2" | "companyLogo3" | "companyLogo4" | "brokenCircleGreen" | "triangleOrange" | "circleOrange" | "squareWhite" | "pathGreen" | "time" | "printer" | "docs2" | "docBinding" | "text" | "file";
+    variant? : "null" | "triangleGreen" | "halfCircleGreen" | "brokeCircle" | "squareVoilet" | "brokeCircleVoilet" | "crownIcon" | "docsIcon" | "teamIcon" | "arrowDownIcon" | "callIcon" | "messageIcon" | "locationIcon" | "graySignIcon" | "playIcon" | "companyLogo1" | "companyLogo2" | "companyLogo3" | "companyLogo4" | "brokenCircleGreen" | "triangleOrange" | "circleOrange" | "squareWhite" | "pathGreen" | "time" | "printer" | "docs2" | "docBinding" | "text" | "file" | "squareOrange" | "triangleVoilet" ;
   };
   
 export const Shape:React.FC<ShapeProps> = ({className,variant}) => {
@@ -347,6 +347,31 @@ export const Shape:React.FC<ShapeProps> = ({className,variant}) => {
         <img
           className="pointer-events-none object-cover"
           src="/public/assets/file.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+
+    if(variant == "squareOrange"){
+      return (
+        <div className={cn("h-32 aspect-square  ", className)}>
+        <img
+          className="pointer-events-none object-cover"
+          src="/public/assets/squareOrange.svg"
+          alt="circle_icon"
+        />
+        <div className="absolute inset-0 bg-transparent"></div>
+      </div>
+        )
+    }
+    if(variant == "triangleVoilet"){
+      return (
+        <div className={cn("h-32 aspect-square  ", className)}>
+        <img
+          className="pointer-events-none object-cover"
+          src="/public/assets/triangleVoilet.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>

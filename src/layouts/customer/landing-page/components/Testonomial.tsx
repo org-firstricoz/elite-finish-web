@@ -1,5 +1,5 @@
 import React from "react"
-import TestonomialSection from "../../../../components/EliteTestimonial/EliteTestimonial"
+import TestonomialSection from "../../../../components/EliteTestimonial"
 
 const Testonomial: React.FC = () => {
     return (

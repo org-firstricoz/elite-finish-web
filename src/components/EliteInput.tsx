@@ -6,9 +6,9 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   required?: boolean;
 }
 
-const Input: React.FC<InputProps> = ({ label, required = false, className, ...props }) => {
+const  Input: React.FC<InputProps> = ({ label, required = false, className, ...props }) => {
   return (
-    <div className="flex flex-col">
+    <div className="w-full flex flex-col">
       <label className="md:text-2xl text-lg font-semibold">
         {label}
         {required && <span className="text-2xl font-bold">*</span>}

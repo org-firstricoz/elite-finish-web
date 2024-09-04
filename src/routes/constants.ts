@@ -6,6 +6,10 @@ import { ServiceDetailPage } from "@/layouts/customer/serviceDetails";
 import { GalleryPage } from "@/layouts/customer/gallery";
 import { TeamPage } from "@/layouts/customer/team";
 import { PricingPage } from "@/layouts/customer/pricing";
+import { BlogPage } from "@/layouts/customer/blog";
+import ContactUsPage from "@/layouts/customer/contactUs/ContactUsPage";
+import { BlogDetailPage } from "@/layouts/customer/blogDetails";
+import { FaqPage } from "@/layouts/customer/Faq";
 
 
 interface RoutDocument{
@@ -41,6 +45,22 @@ const CUSTOMER_ROUTES: RoutDocument[] = [
     {
       href: "pricing",
       page: PricingPage,
+    },
+    {
+      href: "blog",
+      page: BlogPage,
+    },
+    {
+      href: "blog/details",
+      page: BlogDetailPage,
+    },
+    {
+      href: "contact-us",
+      page: ContactUsPage,
+    },
+    {
+      href: "faq",
+      page: FaqPage,
     },
    
   
