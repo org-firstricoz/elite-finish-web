@@ -1,6 +1,6 @@
 import React from "react"
 
-export const AboutUs: React.FC = () => {
+export const AboutUsMain: React.FC = () => {
     return (
         <>
             <div className="relative w-full min-h-screen h-auto grid grid-cols-12 md:pt-0 pt-12  items-center lg:px-32 sm:px-8 px-2 ">

@@ -17,7 +17,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
     return (
       <img
         className={cn("absolute", className)}
-        src="/public/assets/triangle.svg"
+        src="/assets/triangle.svg"
         alt="triangle" />
     )
   }
@@ -26,7 +26,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
     return (
       <img
         className={cn("absolute ", className)}
-        src="/public/assets/squareVoilet.svg"
+        src="/assets/squareVoilet.svg"
         alt="squareVoilet" />
     )
   }
@@ -34,7 +34,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
     return (
       <img
         className={cn("absolute ", className)}
-        src="/public/assets/circlebroke.svg"
+        src="/assets/circlebroke.svg"
         alt="brokeCircle" />
     )
   }
@@ -42,7 +42,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
     return (
       <img
         className={cn("absolute ", className)}
-        src="/public/assets/circleGreen.svg"
+        src="/assets/circleGreen.svg"
         alt="halfCircleGreen" />
     )
   }
@@ -51,7 +51,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
     return (
       <img
         className={cn("absolute ", className)}
-        src="/public/assets/brokenCircleVoilet.svg"
+        src="/assets/brokenCircleVoilet.svg"
         alt="brocken_circle" />
     )
   }
@@ -60,7 +60,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
     return (
       <img
         className={cn(" ", className)}
-        src="/public/assets/crownicon.svg"
+        src="/assets/crownicon.svg"
         alt="crown_icon" />
     )
   }
@@ -68,7 +68,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
     return (
       <img
         className={cn(" ", className)}
-        src="/public/assets/docsIcon.svg"
+        src="/assets/docsIcon.svg"
         alt="docs_icon" />
     )
   }
@@ -76,7 +76,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
     return (
       <img
         className={cn(" ", className)}
-        src="/public/assets/teamIcon.svg"
+        src="/assets/teamIcon.svg"
         alt="team_icon" />
     )
   }
@@ -86,7 +86,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("relative", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/arrowDown.svg"
+          src="/assets/arrowDown.svg"
           alt="arrowup_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -99,7 +99,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("relative", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/callIcon.svg"
+          src="/assets/callIcon.svg"
           alt="call_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -112,7 +112,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("relative", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/messageIcon.svg"
+          src="/assets/messageIcon.svg"
           alt="message_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -125,7 +125,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("relative", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/locationIcon.svg"
+          src="/assets/locationIcon.svg"
           alt="location_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -138,7 +138,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/graySign.svg"
+          src="/assets/graySign.svg"
           alt="graySign_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -150,7 +150,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/play.svg"
+          src="/assets/play.svg"
           alt="play_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -163,7 +163,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/logodemo1.svg"
+          src="/assets/logodemo1.svg"
           alt="logo_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -176,7 +176,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/logodemo2.svg"
+          src="/assets/logodemo2.svg"
           alt="logo_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -189,7 +189,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/logodemo3.svg"
+          src="/assets/logodemo3.svg"
           alt="logo_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -202,7 +202,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/logodemo4.svg"
+          src="/assets/logodemo4.svg"
           alt="logo_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -214,7 +214,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/brokenCircleGreen.svg"
+          src="/assets/brokenCircleGreen.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -227,7 +227,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/TriangleOrange.svg"
+          src="/assets/TriangleOrange.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -240,7 +240,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/circleOrange.svg"
+          src="/assets/circleOrange.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -253,7 +253,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/squareWhite.svg"
+          src="/assets/squareWhite.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -266,7 +266,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/pathGreen.svg"
+          src="/assets/pathGreen.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -279,7 +279,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/time.svg"
+          src="/assets/time.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -292,7 +292,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("h-32 aspect-square ", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/printer.svg"
+          src="/assets/printer.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -305,7 +305,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("h-32 aspect-square ", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/text.svg"
+          src="/assets/text.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -319,7 +319,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("h-32 aspect-square  ", className)}>
         <img
           className="pointer-events-none"
-          src="/public/assets/docs2.svg"
+          src="/assets/docs2.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -333,7 +333,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("h-32 aspect-square  ", className)}>
         <img
           className="pointer-events-none object-cover"
-          src="/public/assets/docBinding.svg"
+          src="/assets/docBinding.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -346,7 +346,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("h-32 aspect-square  ", className)}>
         <img
           className="pointer-events-none object-cover"
-          src="/public/assets/file.svg"
+          src="/assets/file.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -359,7 +359,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("h-32 aspect-square  ", className)}>
         <img
           className="pointer-events-none object-cover"
-          src="/public/assets/squareOrange.svg"
+          src="/assets/squareOrange.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
@@ -371,7 +371,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("h-32 aspect-square  ", className)}>
         <img
           className="pointer-events-none object-cover"
-          src="/public/assets/triangleVoilet.svg"
+          src="/assets/triangleVoilet.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>

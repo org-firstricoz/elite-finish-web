@@ -1,5 +1,4 @@
 import React from "react";
-import { AboutPage } from "@/layouts/customer/about-us";
 import { LandingPage } from "@/layouts/customer/landing-page";
 import { ServicesPage } from "@/layouts/customer/services";
 import { ServiceDetailPage } from "@/layouts/customer/serviceDetails";
@@ -10,7 +9,7 @@ import { BlogPage } from "@/layouts/customer/blog";
 import ContactUsPage from "@/layouts/customer/contactUs/ContactUsPage";
 import { BlogDetailPage } from "@/layouts/customer/blogDetails";
 import { FaqPage } from "@/layouts/customer/Faq";
-
+import  AboutPage  from "@/layouts/customer/about-us/AboutUs";
 
 interface RoutDocument{
     href : string;
@@ -25,11 +24,11 @@ const CUSTOMER_ROUTES: RoutDocument[] = [
     {
       href: "about-us",
       page: AboutPage,
-    },
+    },  
     {
       href: "services",
       page: ServicesPage,
-    },
+    },  
     {
       href: "services/details",
       page: ServiceDetailPage,

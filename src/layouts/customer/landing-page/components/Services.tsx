@@ -1,6 +1,7 @@
 import { EliteButton } from "@/components"
 import { Shape } from "@/components/Shapes"
 import React from "react"
+import { Link } from "react-router-dom"
 
 
 export const Services: React.FC = () => {
@@ -14,7 +15,9 @@ export const Services: React.FC = () => {
                             <h1>Easy and Fast Print Customization </h1>
                             <h1>with Digital Print Services</h1>
                         </div>
+                        <Link to={"services"}>
                         <EliteButton className="text-md">Learn More</EliteButton>
+                        </Link>
                     </div>
                 </div>
 
