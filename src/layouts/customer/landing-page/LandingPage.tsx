@@ -1,5 +1,5 @@
 import React from "react"
-import { CompanyLogos } from "./components/CompanyLogos"
+import { CompanyLogos } from "../../../components/CompanyLogos"
 import { AboutUs } from "./components/AboutUs"
 import { Why } from "./components/Why"
 import { Services } from "./components/Services"
@@ -14,7 +14,7 @@ import Hero from "./components/Hero"
 const LandingPage: React.FC = () => {
   return (
     <>
-      <Hero/>
+      <Hero />
       <CompanyLogos />
       <AboutUs />
       <Why />

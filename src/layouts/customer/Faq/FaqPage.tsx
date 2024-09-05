@@ -1,6 +1,6 @@
+import React from "react"
 import { EliteCommon, HeroCommon } from "@/components"
 import TestonomialSection from "@/components/EliteTestimonial"
-import React from "react"
 import Faq from "./component/Faq"
 
 const FaqPage: React.FC = () => {

@@ -1,20 +1,24 @@
+import BlogCard from "@/components/BlogCard"
 import React from "react"
-import BlogCard from "./BlogCard"
 
 const blogData = [
     {
+        id: 1,
         heading: "Experience the Power of Digital Printing",
         content: "Lorem ipsum dolor sit amet consectetur. Non commodo mi elitconvallis. Tempor facilisi pellent",
     },
     {
+        id: 2,
         heading: "Experience the Power of Digital Printing",
         content: "Lorem ipsum dolor sit amet consectetur. Non commodo mi elitconvallis. Tempor facilisi pellent",
     },
     {
+        id: 3,
         heading: "Experience the Power of Digital Printing",
         content: "Lorem ipsum dolor sit amet consectetur. Non commodo mi elitconvallis. Tempor facilisi pellent",
     },
     {
+        id: 4,
         heading: "Experience the Power of Digital Printing",
         content: "Lorem ipsum dolor sit amet consectetur. Non commodo mi elitconvallis. Tempor facilisi pellent",
     },
@@ -41,6 +45,7 @@ const Blog = () => {
                                     <React.Fragment key={i} >
                                         <div className="md:col-span-6  col-span-12 flex justify-center ">
                                             <BlogCard
+                                                id={blog.id}
                                                 heading={blog.heading}
                                                 content={blog.content}
                                             />

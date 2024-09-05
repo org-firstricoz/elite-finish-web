@@ -1,6 +1,5 @@
-import { EliteCommon } from "@/components"
+import { EliteCommon, HeroCommon } from "@/components"
 import TestonomialSection from "@/components/EliteTestimonial"
-import HeroServiceDetails from "./components/HeroServiceDetails"
 import DocPrinting from "./components/DocPrinting"
 import ServicesProvided from "./components/Provide"
 import Register from "./components/Register"
@@ -8,7 +7,10 @@ import Register from "./components/Register"
 const ServiceDetailPage = () => {
   return (
     <>
-      <HeroServiceDetails />
+       <HeroCommon
+            heading="Services Details"
+            description="Lorem ipsum dolor sit amet consectetur. Non commodo mi elit ut convallis. Tempor facilisi pellentesque sem praesent tortor venenatis. Diam volutpat interdum quis senectus. Quam eros nunc habitant placerat arcu accumsan."
+        />
       <DocPrinting />
       <ServicesProvided />
       <Register />

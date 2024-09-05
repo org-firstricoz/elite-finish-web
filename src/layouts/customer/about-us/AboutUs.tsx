@@ -1,26 +1,23 @@
-import { EliteCommon } from "../../../components"
-import { CompanyLogos } from "../landing-page/components/CompanyLogos"
-import { AboutUs } from "./components/AboutUs"
-import CreativeProdTeam from "./components/CreativeProdTeam"
-import HeroAbout from "./components/HeroAbout"
-import History from "./components/History"
-import Testimonial from "./components/Testimonial"
-import Welcome from "./components/Welcome"
-import { Why } from "./components/Why"
+import { EliteCommon, HeroCommon } from "@/components"
+import { AboutUs, CreativeProdTeam, History, Testimonial, Welcome, Why } from "."
+import { CompanyLogos } from "@/components/CompanyLogos"
 
 const AboutPage = () => {
   return (
     <div className="">
-      
-       <HeroAbout/>
-       <AboutUs/>
-       <Why/>
-       <Welcome/>
-       <CompanyLogos/>
-       <CreativeProdTeam/>
-       <History/>
-       <EliteCommon/> 
-       <Testimonial/>
+
+      <HeroCommon
+        heading="About Us"
+        description="Lorem ipsum dolor sit amet consectetur. Non commodo mi elit ut convallis. Tempor facilisi pellentesque sem praesent tortor venenatis. Diam volutpat interdum quis senectus. Quam eros nunc habitant placerat arcu accumsan."
+      />
+      <AboutUs />
+      <Why />
+      <Welcome />
+      <CompanyLogos />
+      <CreativeProdTeam />
+      <History />
+      <EliteCommon />
+      <Testimonial />
     </div>
   )
 }

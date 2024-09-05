@@ -1,5 +1,5 @@
 import React from "react";
-import { Shape } from "../layouts/customer/landing-page/components/Shapes";
+import { Shape } from "./Shapes";
 
 interface HeroCommmonProps {
     heading: string;

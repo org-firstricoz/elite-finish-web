@@ -1,5 +1,5 @@
+import { EliteButton } from "@/components"
 import { Link } from "react-router-dom"
-import { EliteButton } from "../../../../components"
 
 const Services = () => {
     return (

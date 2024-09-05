@@ -1,5 +1,5 @@
+import PricingCard from "@/components/PricingCard"
 import React from "react"
-import PricingCard from "./PricingCard"
 
 const Pricing: React.FC = () => {
     return (

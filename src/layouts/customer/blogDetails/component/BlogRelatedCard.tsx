@@ -8,7 +8,7 @@ interface BlogRelatedCardProps {
     description: string
 }
 const BlogRelatedCard: React.FC<BlogRelatedCardProps> = ({
-    id, 
+ 
     heading, 
     description
 }) => {

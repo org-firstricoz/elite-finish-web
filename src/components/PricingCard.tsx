@@ -1,5 +1,5 @@
 import React from "react"
-import EliteButton from "../../../../components/EliteButton"
+import EliteButton from "./EliteButton"
 import { Shape } from "./Shapes"
 
 interface PricingCardProps {

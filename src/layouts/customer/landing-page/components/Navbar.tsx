@@ -1,6 +1,6 @@
 import React from "react";
 import Navlinks from "./Navlinks";
-import EliteButton from "../../../../components/EliteButton";
+import { EliteButton } from "@/components";
 
 
 const Navbar: React.FC<{ floating?: boolean }> = ({ }) => {

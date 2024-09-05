@@ -1,4 +1,4 @@
-import { Shape } from "../../landing-page/components/Shapes"
+import { Shape } from "@/components/Shapes"
 
 const ServicesProvided = () => {
     return (

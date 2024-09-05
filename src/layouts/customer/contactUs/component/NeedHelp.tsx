@@ -1,5 +1,5 @@
+import { Shape } from "@/components/Shapes"
 import React from "react"
-import { Shape } from "../../landing-page/components/Shapes"
 
 const NeedHelp: React.FC = () => {
     return (
@@ -26,9 +26,9 @@ const NeedHelp: React.FC = () => {
                 </div>
             </div>
 
-            <Shape variant="squareOrange" className=" absolute md:bottom-[18vh] bottom-4 md:left-[5vw] left-10 scale-75 z-[-1]"/>
-            <Shape variant="triangleVoilet" className=" absolute  bottom-6 md:left-[20vw] left-1/2 scale-75 z-[-1]"/>
-            <Shape variant="pathGreen" className=" absolute md:bottom-[29vh] bottom-10 md:right-[5vw] right-10 scale-50 z-[-1]"/>
+            <Shape variant="squareOrange" className=" absolute md:bottom-[18vh] bottom-4 md:left-[5vw] left-10 scale-75 z-[-1]" />
+            <Shape variant="triangleVoilet" className=" absolute  bottom-6 md:left-[20vw] left-1/2 scale-75 z-[-1]" />
+            <Shape variant="pathGreen" className=" absolute md:bottom-[29vh] bottom-10 md:right-[5vw] right-10 scale-50 z-[-1]" />
         </div>
     )
 }

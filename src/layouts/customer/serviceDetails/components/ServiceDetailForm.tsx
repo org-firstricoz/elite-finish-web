@@ -2,8 +2,8 @@ import Dropdown from "@/components/EliteDropDown"
 import Input from "@/components/EliteInput"
 import TextArea from "@/components/EliteTextArea";
 import React from "react"
-import { Shape } from "../../landing-page/components/Shapes";
 import { EliteButton } from "@/components";
+import { Shape } from "@/components/Shapes";
 
 interface ServiceDetailFormProps {
   showUploadFileButton: boolean;

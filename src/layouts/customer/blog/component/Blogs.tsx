@@ -1,5 +1,5 @@
+import BlogCard from "@/components/BlogCard"
 import React from "react"
-import BlogCard from "../../landing-page/components/BlogCard"
 
 const blogData = [
     {

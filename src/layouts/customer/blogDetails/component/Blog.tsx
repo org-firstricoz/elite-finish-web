@@ -2,6 +2,7 @@ import React from "react"
 import BlogContent from "./BlogContent"
 import SideBlogs from "./SideBlogs"
 
+
 const Blog:React.FC = () => {
   return (
     <div className=" lg:px-32 sm:px-8 px-2">

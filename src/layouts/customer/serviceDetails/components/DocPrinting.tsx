@@ -1,5 +1,5 @@
+import { Shape } from "@/components/Shapes"
 import React from "react"
-import { Shape } from "../../landing-page/components/Shapes"
 
 const DocPrinting: React.FC = () => {
     return (

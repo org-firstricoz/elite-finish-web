@@ -1,4 +1,4 @@
-import { EliteButton } from "../../../../components"
+import { EliteButton } from "@/components"
 
 const Hero = () => {
     return (

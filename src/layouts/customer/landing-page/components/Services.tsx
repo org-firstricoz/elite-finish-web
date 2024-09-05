@@ -1,6 +1,7 @@
+import { EliteButton } from "@/components"
+import { Shape } from "@/components/Shapes"
 import React from "react"
-import EliteButton from "../../../../components/EliteButton"
-import { Shape } from "./Shapes"
+
 
 export const Services: React.FC = () => {
     return (
