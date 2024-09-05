@@ -5,12 +5,14 @@ import { NotFoundPage } from "../layouts/customer/notFound";
 import { CUSTOMER_ROUTES } from "./constants";
 import Navbar from "../layouts/customer/landing-page/components/Navbar";
 import { Footer } from "../layouts/customer/landing-page/components/Footer";
+import EliteScrollToTop from "@/components/EliteScrollToTop";
 
 
 
 const Router: React.FC = () => {
   return (
     <BrowserRouter>
+    <EliteScrollToTop/>
       <Navbar/>
       <Routes>
       <Route path="*" element={React.createElement(NotFoundPage)} />

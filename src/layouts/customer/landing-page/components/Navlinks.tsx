@@ -23,7 +23,7 @@ export const NAVLINKS = [
   },
   {
     title: "Contact Us",
-    href: "/contact",
+    href: "/contact-us",
   },
 ];
 
