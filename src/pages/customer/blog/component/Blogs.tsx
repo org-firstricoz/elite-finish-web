@@ -40,9 +40,9 @@ const Blogs = () => {
             <div className="h-auto ">
                 <div className="row-span-3 ">
                     <div className="w-full flex flex-col gap-4 justify-center items-center">
-                        <EliteSmallHeading heading="Blog"/> 
-                        <EliteLargeHeading headings={["Digital Printing Industry Update Lates","News and Information"]} 
-                        className="text-[5.5vw]"/>
+                        <EliteSmallHeading heading="Blog" />
+                        <EliteLargeHeading headings={["Digital Printing Industry Update Lates", "News and Information"]}
+                            className="text-[5.5vw]" />
                     </div>
                 </div>
                 <div className="  min-h-screen h-auto   lg:px-32 sm:px-8 px-2">
@@ -50,15 +50,14 @@ const Blogs = () => {
 
                         {
                             blogData.map((blog, i) =>
-                                <React.Fragment key={i}>
-                                    <div className="md:col-span-6  col-span-12 flex justify-center lg:px-4 px-2">
-                                        <BlogCard
-                                            id={blog.id}
-                                            heading={blog.heading}
-                                            content={blog.content}
-                                        />
-                                    </div>
-                                </React.Fragment>)
+                                <div key={`BLOG_${i}`} className="md:col-span-6  col-span-12 flex justify-center lg:px-4 px-2">
+                                    <BlogCard
+                                        id={blog.id}
+                                        heading={blog.heading}
+                                        content={blog.content}
+                                    />
+                                </div>
+                            )
                         }
 
 

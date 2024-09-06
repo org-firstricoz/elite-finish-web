@@ -1,7 +1,7 @@
 import { EliteCommon, HeroCommon } from "@/components"
 import TestonomialSection from "@/components/EliteTestimonial"
 import DocPrinting from "./components/DocPrinting"
-import ServicesProvided from "./components/Provide"
+import ServicesProvided from "./components/ServiceProvided"
 import Register from "./components/Register"
 
 const ServiceDetailPage = () => {

@@ -1,6 +1,7 @@
 import React from "react"
 
 const BlogContent: React.FC = () => {
+
     return (
         <>
             <div className="flex flex-col items-start gap-8 py-12">

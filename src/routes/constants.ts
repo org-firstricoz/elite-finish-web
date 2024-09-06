@@ -1,15 +1,6 @@
+import { AboutPage, BlogDetailPage, BlogPage, ContactUsPage, FaqPage, GalleryPage, LandingPage, PricingPage, ServiceDetailPage, ServicesPage, TeamPage } from "@/pages";
 import React from "react";
-import { LandingPage } from "@/layouts/customer/landing-page";
-import { ServicesPage } from "@/layouts/customer/services";
-import { ServiceDetailPage } from "@/layouts/customer/serviceDetails";
-import { GalleryPage } from "@/layouts/customer/gallery";
-import { TeamPage } from "@/layouts/customer/team";
-import { PricingPage } from "@/layouts/customer/pricing";
-import { BlogPage } from "@/layouts/customer/blog";
-import ContactUsPage from "@/layouts/customer/contactUs/ContactUsPage";
-import { BlogDetailPage } from "@/layouts/customer/blogDetails";
-import { FaqPage } from "@/layouts/customer/Faq";
-import  AboutPage  from "@/layouts/customer/about-us/AboutUs";
+
 
 interface RoutDocument{
     href : string;

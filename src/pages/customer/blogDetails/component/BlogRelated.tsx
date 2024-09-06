@@ -32,15 +32,14 @@ const BlogRelated: React.FC = () => {
             <div className="my-20 grid grid-cols-2 gap-10 md:flex md:justify-between  lg:px-32 sm:px-8 px-2">
                 {
                     blogData.map((blog, i) =>
-                        <React.Fragment key={i}>
-                            <div className="flex justify-center items-center flex-col gap-2  md:gap-5">
-                                <BlogRelatedCard
-                                    id={blog.id}
-                                    heading={blog.heading}
-                                    description={blog.description}
-                                />
-                            </div>
-                        </React.Fragment>)
+                        <div key={`BLOG_DATA_${i}`} className="flex justify-center items-center flex-col gap-2  md:gap-5">
+                            <BlogRelatedCard
+                                id={blog.id}
+                                heading={blog.heading}
+                                description={blog.description}
+                            />
+                        </div>
+                    )
                 }
             </div>
         </div>

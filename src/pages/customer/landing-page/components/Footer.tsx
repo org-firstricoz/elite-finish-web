@@ -60,9 +60,8 @@ export const Footer: React.FC = () => {
                             flex-col  text-sm gap-2 md:gap-4 mb-5 md:mb-0`}>
                                 {
                                     SERVICES.content.map((opt, i) =>
-                                        <React.Fragment key={i}>
-                                            <h1><a href="/#"> {opt} </a></h1>
-                                        </React.Fragment>)
+                                        <h1 key={`SERVICES_${i}`}><a href="/#"> {opt} </a></h1>
+                                    )
                                 }
                             </div>
                         </div>
@@ -78,9 +77,8 @@ export const Footer: React.FC = () => {
                              flex-col  text-sm gap-2 md:gap-4 mb-5 md:mb-0`}>
                                 {
                                     LINKS.content.map((opt, i) =>
-                                        <React.Fragment key={i}>
-                                            <h1><a href="/#"> {opt} </a></h1>
-                                        </React.Fragment>)
+                                            <h1 key={`LINKS_${i}`}><a href="/#"> {opt} </a></h1>
+                                        )
                                 }
                             </div>
                         </div>
@@ -95,13 +93,11 @@ export const Footer: React.FC = () => {
                             <div className={` ${isShowOptions === CONTACT.id ? "flex" : "hidden md:flex "} flex-col  text-sm gap-2 md:gap-4`}>
                                 {
                                     CONTACT.content.map((opt, i) =>
-                                        <React.Fragment key={i}>
-                                            <div className="flex gap-3 items-center  ">
+                                            <div key={`CONTACT_${i}`} className="flex gap-3 items-center  ">
                                                 <Shape variant={opt ? opt.icon : "null"} className="h-5 w-5 " />
                                                 <p className=" text-sm ">{opt.content}</p>
                                             </div>
-                                        </React.Fragment>)
-                                }
+                               ) }
                             </div>
                         </div>
 
