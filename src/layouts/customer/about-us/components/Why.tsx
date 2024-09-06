@@ -1,3 +1,4 @@
+import { EliteLargeHeading, EliteSmallHeading } from "@/components"
 import { Shape } from "@/components/Shapes"
 import React from "react"
 
@@ -6,11 +7,8 @@ export const Why: React.FC = () => {
         <>
             <div className="w-full h-fit mb-14 mt-14 md:mt-0   ">
                 <div className=" w-full flex flex-col gap-1 text-black text-center ">
-                    <h1 className="font-semibold md:text-lg text-sm mb-4 text-black">Why?</h1>
-                    <div className="font-semibold md:text-4xl lg:text-5xl sm:text-3xl text-2xl">
-                        <h1 className="">Fast, Cheap and High-Quality Digital</h1>
-                        <h1 className=" ">Prints Why Not?</h1>
-                    </div>
+                    <EliteSmallHeading heading="Why?"/>
+                    <EliteLargeHeading headings={["Fast, Cheap and High-Quality Digital","Prints Why Not?"]} className="leading-relaxed" />
                 </div>
                 {/* cards */}
                 <div className="w-full h-[22rem] grid grid-cols-3 mt-14 mb-24  lg:px-32 sm:px-8 px-2 ">

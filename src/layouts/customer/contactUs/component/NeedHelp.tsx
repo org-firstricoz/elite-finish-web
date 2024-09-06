@@ -1,4 +1,4 @@
-import { Shape } from "@/components/Shapes"
+import { Shape } from "@/components"
 import React from "react"
 
 const NeedHelp: React.FC = () => {

@@ -1,4 +1,4 @@
-import { EliteButton } from "@/components"
+import { EliteButton, EliteSmallHeading } from "@/components"
 import { Shape } from "@/components/Shapes"
 import React from "react"
 import { Link } from "react-router-dom"
@@ -9,7 +9,7 @@ export const Services: React.FC = () => {
         <>
             <div className=" h-auto bg-elite-blue py-24  lg:px-32 sm:px-8 px-2">
                 <div className="w-full  mb-12">
-                    <h1 className="font-semibold md:text-lg text-sm mb-4 text-white">Services</h1>
+                    <EliteSmallHeading heading="Services" className="text-white"/>
                     <div className="text-white  flex flex-col md:flex-row justify-between gap-2 md:gap-0">
                         <div className=" font-semibold md:text-4xl lg:text-5xl sm:text-3xl text-2xl">
                             <h1>Easy and Fast Print Customization </h1>

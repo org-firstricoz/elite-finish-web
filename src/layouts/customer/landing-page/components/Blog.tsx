@@ -1,3 +1,4 @@
+import { EliteLargeHeading, EliteSmallHeading } from "@/components"
 import BlogCard from "@/components/BlogCard"
 import React from "react"
 
@@ -31,11 +32,14 @@ const Blog = () => {
                 <div className="h-auto ">
                     <div className="row-span-3 ">
                         <div className="w-full flex flex-col gap-4 justify-center items-center">
-                            <h1 className="font-semibold md:text-lg text-sm mb-4">Blog</h1>
+                            <EliteSmallHeading heading="Blog"/>
                             <div className=" lg:text-4xl md:text-3xl sm:text-2xl text-[5.5vw] text-center font-bold sm:font-semibold ">
-                                <h1 >Digital Printing Industry Update Latest</h1>
-                                <h1>News and Information</h1>
+                                <h1 ></h1>
+                                <h1></h1>
                             </div>
+                            <EliteLargeHeading headings={["Digital Printing Industry Update Latest","News and Information"]}
+                            className="text-[5.5vw] leading-3 md:leading-relaxed"
+                            />
                         </div>
                     </div>
                     <div className="  min-h-screen h-auto   lg:px-32 sm:px-8 px-2">

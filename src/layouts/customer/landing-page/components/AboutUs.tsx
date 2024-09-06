@@ -1,4 +1,7 @@
 import { EliteButton } from "@/components"
+import { EliteDescription } from "@/components/EliteDescription"
+import { EliteLargeHeading } from "@/components/EliteLargeHeading"
+import { EliteSmallHeading } from "@/components/EliteSmallHeading"
 import { Shape } from "@/components/Shapes"
 import React from "react"
 import { Link } from "react-router-dom"
@@ -17,16 +20,18 @@ export const AboutUs: React.FC = () => {
                     </div>
                 </div>
                 <div className="relative md:col-span-6 col-span-12 h-full  md:py-0 py-8 flex items-center justify-center px-4 ">
-                    <div className="flex flex-col gap-5 ">
-                        <h1 className="font-semibold md:text-lg text-sm mb-4">About Us</h1>
-                        <div className="font-semibold md:text-4xl lg:text-5xl sm:text-3xl text-2xl">
-                            <h1>Experience the Power </h1>
-                            <h1>of Digital Printing</h1>
-                        </div>
+                    <div className="flex flex-col md:gap-5 gap-2">
 
-                        <h1 className="text-sm">Lorem ipsum dolor sit amet consectetur. Non commodo mi elit ut convallis. Tempor facilisi pellentesque sem praesent tortor venenatis.</h1>
+                        <EliteSmallHeading
+                            heading="About Us" />
+
+                        <EliteLargeHeading
+                            headings={["Experience the Power", "of Digital Printing"]}
+                        />
+                        <EliteDescription heading="Lorem ipsum dolor sit amet consectetur. Non commodo mi elit ut convallis. Tempor facilisi pellentesque sem praesent tortor venenatis." />
+
                         <Link to={'/about-us'}>
-                        <EliteButton>See Details</EliteButton>
+                            <EliteButton>See Details</EliteButton>
                         </Link>
                     </div>
                 </div>

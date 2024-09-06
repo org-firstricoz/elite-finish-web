@@ -1,4 +1,4 @@
-import BlogCard from "@/components/BlogCard"
+import { BlogCard, EliteLargeHeading, EliteSmallHeading } from "@/components"
 import React from "react"
 
 const blogData = [
@@ -40,11 +40,9 @@ const Blogs = () => {
             <div className="h-auto ">
                 <div className="row-span-3 ">
                     <div className="w-full flex flex-col gap-4 justify-center items-center">
-                        <h1 className="font-semibold md:text-lg text-sm mb-4">Blog</h1>
-                        <div className=" lg:text-4xl md:text-3xl sm:text-2xl text-[5.5vw] text-center font-bold sm:font-semibold ">
-                            <h1 >Digital Printing Industry Update Lates</h1>
-                            <h1>News and Information</h1>
-                        </div>
+                        <EliteSmallHeading heading="Blog"/> 
+                        <EliteLargeHeading headings={["Digital Printing Industry Update Lates","News and Information"]} 
+                        className="text-[5.5vw]"/>
                     </div>
                 </div>
                 <div className="  min-h-screen h-auto   lg:px-32 sm:px-8 px-2">

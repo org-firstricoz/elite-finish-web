@@ -1,3 +1,4 @@
+import { EliteSmallHeading } from "@/components"
 
 const Welcome = () => {
     return (
@@ -7,7 +8,7 @@ const Welcome = () => {
                 <div className=" md:col-span-7 col-span-12 md:order-1 order-2 h-full 
                         flex flex-col md:gap-36 gap-5" >
                     <div>
-                        <h1 className="font-semibold md:text-lg text-sm mb-4">Welcome</h1>
+                        <EliteSmallHeading heading="Welcome" />
                         <div className="lg:text-4xl md:text-3xl sm:text-2xl text-2xl font-bold sm:font-semibold ">
                             <h1 >Welcome To <span className="text-elite-green"> Ricoz</span> </h1>
                             <h1>Help You Find The Best</h1>

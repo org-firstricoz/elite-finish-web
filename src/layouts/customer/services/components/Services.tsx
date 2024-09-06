@@ -7,7 +7,7 @@ const Services = () => {
             <div className="h-auto ">
                 <div className="row-span-3 ">
                     <div className="w-full flex flex-col gap-4 justify-center items-center">
-                        <div className=" lg:text-4xl md:text-3xl sm:text-2xl text-2xl text-center font-bold sm:font-semibold ">
+                        <div className=" lg:text-4xl md:text-3xl sm:text-2xl text-[6vw] text-center font-bold sm:font-semibold ">
                             <h1 >Easy and Fast Print Customization</h1>
                             <h1>with Digital Print Services</h1>
                         </div>
