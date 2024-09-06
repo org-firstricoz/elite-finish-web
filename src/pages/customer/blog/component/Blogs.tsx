@@ -34,7 +34,7 @@ const blogData = [
     },
 ]
 
-const Blogs = () => {
+const Blogs:React.FC = () => {
     return (
         <div className=" w-full my-16">
             <div className="h-auto ">
