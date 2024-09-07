@@ -371,7 +371,7 @@ export const Shape: React.FC<ShapeProps> = ({ className, variant }) => {
       <div className={cn("h-32 aspect-square  ", className)}>
         <img
           className="pointer-events-none object-cover"
-          src="/assets/triangleVoilet.svg"
+          src="public/assets/triangleVoilet.svg"
           alt="circle_icon"
         />
         <div className="absolute inset-0 bg-transparent"></div>
