@@ -57,7 +57,6 @@ const Faq: React.FC = () => {
                     Frequently Asked Questions
                 </h1>
             </div>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12">
                 <div className="md:col-span-1 col-span-2 ">
                     {faqData.slice(0, 4).map((faq, i) => (
@@ -82,7 +81,7 @@ const Faq: React.FC = () => {
                     ))}
                 </div>
                 <div className="md:col-span-1 col-span-2">
-                    {faqData.slice(4, 8).map((faq,i) => (
+                    {faqData.slice(4, 8).map((faq, i) => (
                         <div
                             key={`FAQ_DATA${i}`}
                             className="bg-red-20 p-4 cursor-pointer transition-all duration-300 mb-4"
@@ -103,10 +102,7 @@ const Faq: React.FC = () => {
                         </div>
                     ))}
                 </div>
-
             </div>
-
-
         </div>
     )
 }

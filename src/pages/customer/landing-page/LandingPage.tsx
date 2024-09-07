@@ -13,7 +13,7 @@ import Hero from "./components/Hero"
 
 const LandingPage: React.FC = () => {
   return (
-    <>
+    <div>
       <Hero />
       <CompanyLogos />
       <AboutUs />
@@ -25,7 +25,7 @@ const LandingPage: React.FC = () => {
       <Pricing />
       <Testonomial />
       <Blog />
-    </>
+    </div>
   )
 }
 

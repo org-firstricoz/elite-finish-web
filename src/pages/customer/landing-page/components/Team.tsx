@@ -2,7 +2,6 @@ import React from "react"
 import demoImg from '../../../../../public/assets/demoimage.png'
 export const Team: React.FC = () => {
     return (
-        <>
             <div className=" w-full h-auto py-32 flex flex-col justify-center">
                 <div className=" min-h-screen h-auto  w-full  lg:px-32 sm:px-8 px-2">
                     <div className="grid grid-cols-2 h-full w-full ">
@@ -43,6 +42,5 @@ export const Team: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </>
     )
 }

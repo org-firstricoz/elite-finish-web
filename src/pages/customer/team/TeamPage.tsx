@@ -6,7 +6,7 @@ import Team from "./components/Team"
 
 const TeamPage: React.FC = () => {
     return (
-        <>
+        <div>
             <HeroCommon
                 heading="Team"
                 description="Lorem ipsum dolor sit amet consectetur. Non commodo mi elit ut convallis. Tempor facilisi pellentesque sem praesent tortor venenatis. Diam volutpat interdum quis senectus. Quam eros nunc habitant placerat arcu accumsan."
@@ -22,7 +22,7 @@ const TeamPage: React.FC = () => {
                 description="Lorem ipsum dolor sit amet consectetur. Non commodo mi elit ut convallis. Tempor facilisi pellentesque sem praesent tortor venenatis. Diam volutpat interdum quis senectus. Quam eros nunc habitant placerat arcu accumsan lacinia erat. Porttitor neque pharetra viverra in rhoncus. Diam dignissim facilisis consequat quisque pharetra."
                 author="Sally Wily - Customer Rona"
             />
-        </>
+        </div>
     )
 }
 export default TeamPage

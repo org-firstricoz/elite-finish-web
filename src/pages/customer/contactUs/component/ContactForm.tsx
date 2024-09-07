@@ -18,7 +18,6 @@ const ContactForm: React.FC = () => {
                     />
                 </div>
             </div>
-
         </div>
     )
 }

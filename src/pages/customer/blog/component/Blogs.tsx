@@ -34,7 +34,7 @@ const blogData = [
     },
 ]
 
-const Blogs:React.FC = () => {
+const Blogs: React.FC = () => {
     return (
         <div className=" w-full my-16">
             <div className="h-auto ">
@@ -57,10 +57,7 @@ const Blogs:React.FC = () => {
                                         content={blog.content}
                                     />
                                 </div>
-                            )
-                        }
-
-
+                            )}
                     </div>
                 </div>
             </div>

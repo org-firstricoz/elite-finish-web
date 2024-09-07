@@ -44,7 +44,6 @@ export const Footer: React.FC = () => {
         setShowOptions((prev) => prev === id ? null : id)
     }
     return (
-        <>
             <div className=" w-full min-h-screen h-auto flex items-center">
                 <div className="md:min-h-[65%] min-h-full  h-auto bg-elite-blue w-full flex flex-col items-center justify-evenly  lg:px-32 sm:px-8 px-2">
                     <h1 className="text-2xl font-bold text-center text-white py-6 lg:py-12">Ricoz</h1>
@@ -137,6 +136,5 @@ export const Footer: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </>
     )
 }

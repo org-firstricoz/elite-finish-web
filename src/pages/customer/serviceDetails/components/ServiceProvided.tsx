@@ -2,7 +2,6 @@ import { Shape } from "@/components/Shapes"
 
 const ServicesProvided = () => {
     return (
-        <>
             <div className="h-full w-full  lg:px-32 sm:px-8 px-2">
                 <div className="w-full">
                     <h1 className="font-semibold md:text-4xl text-2xl mb-4 text-center">Services Provides</h1>
@@ -40,10 +39,8 @@ const ServicesProvided = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </>
     )
 }
 export default ServicesProvided

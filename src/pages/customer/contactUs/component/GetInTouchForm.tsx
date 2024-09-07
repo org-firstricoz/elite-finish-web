@@ -3,9 +3,7 @@ import React from "react"
 
 const GetInTouchForm: React.FC = () => {
     return (
-
         <div className=" w-full grid grid-cols-12  py-12 gap-8 ">
-
             <div className="md:col-span-6 col-span-12 h-auto">
                 <EliteInput
                     label="Your First Name"
@@ -50,9 +48,8 @@ const GetInTouchForm: React.FC = () => {
                 />
             </div>
             <div className="col-span-12">
-            <EliteButton>Request Order</EliteButton>
+                <EliteButton>Request Order</EliteButton>
             </div>
-            
         </div>
 
     )

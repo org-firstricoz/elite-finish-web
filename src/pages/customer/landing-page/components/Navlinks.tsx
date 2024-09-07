@@ -32,7 +32,6 @@ const Navlinks: React.FC = () => {
   const currentUrl = useLocation().pathname;
   console.log('>>>>>>>>>>>', currentUrl)
   return (
-    
     <div className="md:flex hidden gap-12 items-center text-sm font font-[400] ">
       {NAVLINKS.map((link, i) => (
         <Link

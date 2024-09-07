@@ -10,8 +10,8 @@ const ContactUsPage: React.FC = () => {
         heading="Contact Us"
         description="Lorem ipsum dolor sit amet consectetur. Non commodo mi elit ut convallis. Tempor facilisi pellentesque sem praesent tortor venenatis. Diam volutpat interdum quis senectus. Quam eros nunc habitant placerat arcu accumsan."
       />
-      <ContactUs/>
-      <Maps/>
+      <ContactUs />
+      <Maps />
     </div>
   )
 }

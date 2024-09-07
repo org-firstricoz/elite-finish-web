@@ -36,7 +36,6 @@ const ServiceDetailForm: React.FC<ServiceDetailFormProps> = ({ showUploadFileBut
 
   return (
 
-
     <div className="grid grid-cols-12  py-12 gap-8 ">
 
       <div className="md:col-span-6 col-span-12 h-auto">

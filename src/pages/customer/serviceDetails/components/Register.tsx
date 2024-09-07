@@ -3,7 +3,6 @@ import ServiceDetailForm from "./ServiceDetailForm"
 
 const Register: React.FC = () => {
     return (
-        <>
             <div className=" w-full py-32 ">
                 <div className="h-fit ">
                     <div className="row-span-3 ">
@@ -20,9 +19,7 @@ const Register: React.FC = () => {
                         />
                     </div>
                 </div>
-
             </div>
-        </>
     )
 }
 export default Register

@@ -3,7 +3,7 @@ import React from "react"
 
 const DocPrinting: React.FC = () => {
     return (
-        <>
+
             <div className="  lg:px-32 sm:px-8 px-2">
                 <div className="">
                     <div className="bg-gray-300 w-full aspect-[11/4]"></div>
@@ -38,10 +38,8 @@ const DocPrinting: React.FC = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </>
     )
 }
 export default DocPrinting

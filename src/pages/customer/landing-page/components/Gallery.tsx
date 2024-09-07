@@ -3,7 +3,6 @@ import ImageCard from "@/components/ImageCard"
 import { motion } from 'framer-motion'
 const Gallery = () => {
     return (
-        <>
             <div className=" w-full  mt-24 ">
                 <div className="min-h-auto ">
                     <div className="row-span-3 ">
@@ -70,7 +69,6 @@ const Gallery = () => {
                 </div>
 
             </div>
-        </>
     )
 }
 export default Gallery

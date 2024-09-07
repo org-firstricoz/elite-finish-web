@@ -27,7 +27,6 @@ const blogData = [
 ]
 const Blog = () => {
     return (
-        <>
             <div className=" w-full ">
                 <div className="h-auto ">
                     <div className="row-span-3 ">
@@ -60,9 +59,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-        </>
     )
 }
 export default Blog

@@ -4,7 +4,6 @@ import React from "react"
 
 const Pricing: React.FC = () => {
     return (
-        <>
             <div className=" w-full ">
                 <div className="h-auto ">
                     <div className="row-span-3 ">
@@ -61,9 +60,7 @@ const Pricing: React.FC = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-        </>
     )
 }
 export default Pricing

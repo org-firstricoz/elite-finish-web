@@ -6,7 +6,7 @@ import Register from "./components/Register"
 
 const ServiceDetailPage = () => {
   return (
-    <>
+    <div>
        <HeroCommon
             heading="Services Details"
             description="Lorem ipsum dolor sit amet consectetur. Non commodo mi elit ut convallis. Tempor facilisi pellentesque sem praesent tortor venenatis. Diam volutpat interdum quis senectus. Quam eros nunc habitant placerat arcu accumsan."
@@ -23,7 +23,7 @@ const ServiceDetailPage = () => {
         description="Lorem ipsum dolor sit amet consectetur. Non commodo mi elit ut convallis. Tempor facilisi pellentesque sem praesent tortor venenatis. Diam volutpat interdum quis senectus. Quam eros nunc habitant placerat arcu accumsan lacinia erat. Porttitor neque pharetra viverra in rhoncus. Diam dignissim facilisis consequat quisque pharetra."
         author="Sally Wily - Customer Rona"
       />
-    </>
+    </div>
   )
 }
 export default ServiceDetailPage

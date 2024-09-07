@@ -4,7 +4,7 @@ import TestonomialSection from "@/components/EliteTestimonial"
 
 const BlogPage = () => {
     return (
-        <>
+        <div>
             <HeroCommon
                 heading="Blog"
                 description="Lorem ipsum dolor sit amet consectetur. Non commodo mi elit ut convallis. Tempor facilisi pellentesque sem praesent tortor venenatis. Diam volutpat interdum quis senectus. Quam eros nunc habitant placerat arcu accumsan."
@@ -20,7 +20,7 @@ const BlogPage = () => {
                 author="Sally Wily - Customer Rona"
             />
 
-        </>
+        </div>
     )
 }
 export default BlogPage
