@@ -26,8 +26,8 @@ const StatsCard: React.FC = () => {
             {
                 statsData.map((data, index) => {
                     return (
-                        <div className="col-span-4  flex justify-center ">
-                            <div className= "w-10/12 bg-elite-whiteSmoke rounded-[3rem] flex flex-col items-center justify-center p-8">
+                        <div key={`STATSDATA_${index}`} className="col-span-4  flex justify-center ">
+                            <div className="w-10/12 bg-elite-whiteSmoke rounded-[3rem] flex flex-col items-center justify-center p-8">
                                 <h1 className="text-6xl font-semibold border-b-[1px] border-black w-full text-center pb-3">{data.stats}</h1>
                                 <h1 className="pt-4  text-md">{data.description}</h1>
                             </div>

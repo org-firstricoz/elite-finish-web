@@ -19,8 +19,8 @@ const Testinomial: React.FC = () => {
                                 <div className="flex  gap-1">
 
                                     {
-                                        [1, 2, 3, 4, 5].map((item, index) =>
-                                            <EliteIcons size="2.3rem" variant="star" />
+                                        [1, 2, 3, 4, 5].map((_, index) =>
+                                            <EliteIcons key={`STARS_${index}`} size="2.3rem" variant="star" />
                                         )
                                     }
                                 </div>

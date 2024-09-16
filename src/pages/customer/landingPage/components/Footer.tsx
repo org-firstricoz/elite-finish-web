@@ -1,5 +1,4 @@
 import { EliteIcons } from "@/components"
-import { title } from "process";
 import React from "react"
 
 const Footer: React.FC = () => {
