@@ -3,10 +3,10 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CUSTOMER_ROUTES } from "./constants";
 import { EliteScrollToTop } from "@/components";
-import Navbar from "@/pages/customer/landing-page/components/Navbar";
 import { NotFoundPage } from "@/pages/customer/notFound";
-import { Footer } from "@/pages/customer/landing-page/components/Footer";
 import { RootCustomerLayout } from "@/layouts";
+import { Navbar } from "@/pages";
+import { Footer } from "@/pages/customer/landingPage";
 
 
 

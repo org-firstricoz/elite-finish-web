@@ -10,11 +10,11 @@ export default function EliteButton({ className, variant, ...props }: ButtonProp
 
 
 const buttonVariant = cva(
-    'px-6 py-2 rounded-md md:text-md text-sm hover:opacity-75 font-[600] w-fit h-fit',
+    'px-6 py-2 rounded-full md:text-md text-sm hover:opacity-75 font-[600] w-fit h-fit text-black',
     {
         variants: {
             variant: {
-                primary: "bg-[#FF9247] text-white ",
+                primary: "bg-[#fed719] text-white ",
                 secondary: "bg-white text-black",
                 ternary: "bg-[#E5E5E5] text-black",
             },
