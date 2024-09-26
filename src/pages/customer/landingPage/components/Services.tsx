@@ -1,56 +1,80 @@
-import { EliteButton, EliteIcons } from "@/components"
+import { EliteButton, EliteIcons, EliteImageCard, EliteWideScreenHandler } from "@/components"
 import EliteHeading from "@/components/EliteHeading"
-import { commercialPainter, paintergirl } from "@/constants/imagePatht"
 import React from "react"
+import { paintergirl, painterman2, painterman3, painterman4 } from "@/constants/imagePath"
 
 const Services: React.FC = () => {
+
+    const dataForCard=[
+        {
+            image:paintergirl,
+            title:"interior painting",
+            time:"4",
+            price:"60"
+        },
+        {
+            image:painterman3,
+            title:"Commercial painting",
+            time:"4",
+            price:"60"
+        },
+        {
+            image:painterman2,
+            title:"interior painting",
+            time:"4",
+            price:"60"
+        },
+        
+        {
+            image:painterman4,
+            title:"interior painting",
+            time:"4",
+            price:"60"
+        },
+    ]
+    const cardContainerRef = React.useRef<HTMLDivElement>(null);
+    const scrollHandler=(action :string)=>{
+        if (cardContainerRef.current && action=="next") {
+            cardContainerRef.current.scrollLeft += 500;
+          }
+          if (cardContainerRef.current && action=="prev") {
+            cardContainerRef.current.scrollLeft -= 500;
+          }
+    }
     return (
-        <div className="bg-elite-whiteSmoke min-h-screen h-auto w-full py-16 md:px-12 px-2">
+        <EliteWideScreenHandler>
+        <div className="flex flex-col gap-10 min-h-screen h-auto w-full my-6 ">
             {/* heading */}
-            <div>
                 <EliteHeading>Comprehensive Painting Services</EliteHeading>
-            </div>
             {/*image cards */}
-            <div>
-                <div className="grid grid-cols-12  gap-4 py-12 pt-24">
-                    <div className="col-span-12 md:col-span-6 flex justify-center ">
-                        <div className="lg:w-8/12 w-10/12 place-self-center border-[1px] border-black rounded-b-[33px] rounded-t-[75px] py-12 px-4">
-                            <img
-                                src={paintergirl}
-                                alt=""
-                                className="aspect-square object-cover " />
-
-                            <div className="flex justify-between mt-12">
-                                <h1 className=" lg:text-3xl text-2xl text-black">Interior painting</h1>
-                                <EliteIcons size="2.5rem" variant="rightArrow" />
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div className="col-span-12 md:col-span-6 flex justify-center ">
-                        <div className="lg:w-8/12 w-10/12 border-[1px] border-black rounded-b-[33px] rounded-t-[75px] py-12 px-4">
-                            <img
-                                src={commercialPainter}
-                                alt=""
-                                className="aspect-square object-cover " />
-
-                            <div className="flex justify-between mt-12">
-                                <h1 className=" lg:text-3xl text-2xl text-black">Commercial painting</h1>
-                                <EliteIcons size="2.5rem" variant="rightArrow" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div    ref={cardContainerRef} className=" flex gap-16 overflow-x-auto hide-scrollbar  scroll-smooth md:ps-12 ps-4 ">
+                {
+                    dataForCard.map((item,index)=>{
+                        return <EliteImageCard
+                        key={index}
+                        image={item.image}
+                        title={item.title}
+                        time={item.time}
+                        price={item.price}
+                        />
+                    })
+                }
+           
+            
             </div>
 
             {/* button */}
-            <div className="w-ful flex justify-center">
-                <EliteButton className="text-black py-3 px-16 text-xl">view all services</EliteButton>
+            <div className="w-ful flex items-center justify-between md:px-12 px-4">
+            <button onClick={()=>scrollHandler("prev")} className="-scale-x-[1]"> 
+                <EliteIcons variant="play" className="invert"/>
+                </button>
+                <EliteButton className=" py-3 sm:px-16 px-8 sm:text-xl text-md font-karlaRegular font-thin">view all services</EliteButton>
+                <button onClick={()=>scrollHandler("next")}> 
+                <EliteIcons variant="play" className="invert"/>
+                </button>
             </div>
-
-         
         </div>
+        </EliteWideScreenHandler>
     )
 }
 export default Services

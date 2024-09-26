@@ -1,5 +1,6 @@
 import { EliteIcons } from "@/components"
-import React from "react"
+import 
+React from "react"
 
 const Footer: React.FC = () => {
     const Services = [
@@ -27,11 +28,11 @@ const Footer: React.FC = () => {
       
 
     return (
-        <div className="grid grid-cols-12 bg-elite-whiteSmoke pt-12 pb-20 px-2 md:px-12">
+        <div className="grid grid-cols-12 bg-black pt-12 pb-20 px-4 md:px-12">
             <div className="md:col-span-6 col-span-12 flex flex-col  gap-16">
-                <EliteIcons variant="EliteLogo" />
+                <EliteIcons  className="invert" variant="EliteLogo" />
                 <div className="flex items-center    gap-4">
-                    <EliteIcons size=".7rem" variant="fb" />
+                    <EliteIcons  size=".7rem" variant="fb" />
                     <EliteIcons size="1.2rem" variant="x" />
                     <EliteIcons size="1.2rem" variant="insta" />
                 </div>
@@ -39,17 +40,17 @@ const Footer: React.FC = () => {
                 <div className="">
                     <h1 className="text-lg font-semibold mb-2">Get latest updates and special <br />offers</h1>
 
-                    <div className="flex items-center border-black border-2 w-fit rounded-full  gap-2 bg-elite-whiteSmoke  ps-4  ">
+                    <div className="flex items-center  bg-white border-2 w-fit rounded-full  gap-2 bg-elite-whiteSmoke  ps-4  ">
                         <input type="email"
                             className="border-0 bg-elite-whiteSmoke  rounded-full focus:border-0  focus:outline-none"
                             placeholder="Example@gamail.com" />
-                        <div className="bg-elite-yellow flex justify-center items-center  rounded-full  p-3 aspect-square scale-75">
+                        <div className="bg-elite-yellow flex justify-center items-center  bg-black rounded-full  p-3 aspect-square scale-75">
                             <EliteIcons size="1.8rem" variant="send" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className=" md:col-span-6 col-span-12">
+            <div className=" md:col-span-6 col-span-12 text-white">
                 <div className="grid grid-cols-3 ">
                     <div className="col-span-1">
                         <h1 className="font-bold">Services</h1>
@@ -57,7 +58,7 @@ const Footer: React.FC = () => {
                             {
                                 Services.map((service, index) =>
                                     <h1 key={`SERVICES_${index}`}
-                                    className="text-sm  text-gray-500"
+                                    className="text-sm  text-white"
                                     >
                                         {service.title}
                                     </h1>
@@ -71,7 +72,7 @@ const Footer: React.FC = () => {
                             {
                                 NavigationLinks.map((service, index) =>
                                     <h1 key={`NAVIGATION_${index}`}
-                                    className="text-sm  text-gray-500"
+                                    className="text-sm  text-white"
                                     >
                                         {service.title}
                                     </h1>
@@ -85,7 +86,7 @@ const Footer: React.FC = () => {
                             {
                                 Contact.map((con, index) =>
                                     <h1 key={`CONTACT${index}`}
-                                    className="text-sm  text-gray-500 w-full truncate text-wrap"
+                                    className="text-sm  text-white w-full truncate text-wrap"
                                     >
                                         {con.title}
                                     </h1>

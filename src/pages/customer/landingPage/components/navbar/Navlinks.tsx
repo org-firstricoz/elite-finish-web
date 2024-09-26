@@ -31,16 +31,21 @@ const Navlinks: React.FC = () => {
     <div className="md:flex hidden gap-12 items-center text-sm font font-[400] ">
       {NAVLINKS.map((link, i) => (
         <Link
-          className={cn("hover:text-elite-green py-3 text-black",
-            { 
-              " font-semibold":
-                currentUrl.endsWith(link.href),
-            }
-          )}
-          key={`NAVLINK_${i}`}
-          to={link.href}
+        to={link.href}
+        className={cn("hover:text-elite-green py-3 text-black",
+          { 
+            " font-semibold ":
+            currentUrl.endsWith(link.href),
+          }
+        )}
+        key={`NAVLINK_${i}`}
         >
-          {link.title}
+          <h1   className={cn("",
+          { 
+            " font-semibold border-b-2 border-black ":
+            currentUrl.endsWith(link.href),
+          }
+        )} >{link.title}</h1>
         </Link>
       ))}
 

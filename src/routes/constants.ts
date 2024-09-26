@@ -1,6 +1,6 @@
 
 import React from "react";
-import { LandingPage } from "@/pages";
+import { AboutUsPage, ContactPage, LandingPage, ServicePage } from "@/pages";
 
 
 interface RoutDocument{
@@ -12,6 +12,18 @@ const CUSTOMER_ROUTES: RoutDocument[] = [
     {
       href: "",
       page: LandingPage,
+    },
+    {
+      href: "about-us",
+      page: AboutUsPage,
+    },
+    {
+      href: "services",
+      page: ServicePage,
+    },
+    {
+      href: "contact-us",
+      page: ContactPage,
     },
   
   ];

@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 import { cn } from "../utils";
 
-type ButtonProps = React.HTMLAttributes<HTMLButtonElement> & {
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     variant?: 'primary' | 'secondary' | "ternary";
 }
 export default function EliteButton({ className, variant, ...props }: ButtonProps) {
@@ -14,7 +14,7 @@ const buttonVariant = cva(
     {
         variants: {
             variant: {
-                primary: "bg-[#fed719] text-white ",
+                primary: "bg-black text-white ",
                 secondary: "bg-white text-black",
                 ternary: "bg-[#E5E5E5] text-black",
             },

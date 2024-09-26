@@ -13,21 +13,21 @@ import { Footer } from "@/pages/customer/landingPage";
 const Router: React.FC = () => {
   return (
     <BrowserRouter>
-    <EliteScrollToTop/>
-      <Navbar/>
+      <Navbar />
+      <EliteScrollToTop />
       <Routes>
-      <Route path="*" element={React.createElement(NotFoundPage)} />
-      <Route path="/" element={React.createElement(RootCustomerLayout)}>
-      {CUSTOMER_ROUTES.map((route, i) => (
-        <Route
-        key={`CUSTOMER_ROUTE_${i}`}
-        path={route.href}
-        element={React.createElement(route.page)}
-        />
-      ))}
-      </Route>
+        <Route path="*" element={React.createElement(NotFoundPage)} />
+        <Route path="/" element={React.createElement(RootCustomerLayout)}>
+          {CUSTOMER_ROUTES.map((route, i) => (
+            <Route
+              key={`CUSTOMER_ROUTE_${i}`}
+              path={route.href}
+              element={React.createElement(route.page)}
+            />
+          ))}
+        </Route>
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 };

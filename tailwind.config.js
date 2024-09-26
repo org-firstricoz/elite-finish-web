@@ -23,14 +23,16 @@ export default {
        '3xl': '1700px',
     },
     extend: {
+
+      fontFamily: {
+        karlaRegular : ['Regular']
+      },
       colors: {
         transparent: "transparent",
         
-        "elite-yellow": "#fed719",
-        "elite-whiteSmoke" : "#fffae4",
-        
-
-        
+        "elite-bluelight": "#f6fbff",
+        "elite-blue" : "#e7fafe",
+        "elite-gray" : "#eff4f5",  
       },
     },
   },

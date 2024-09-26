@@ -4,6 +4,7 @@ import AboutUs from "./aboutus/AboutUs";
 import Testinomial from "./Testinomial";
 import Footer from "./Footer";
 import Booking from "./Booking";
+import Process from "./Process";
 
 export{
     Hero,
@@ -11,5 +12,6 @@ export{
     AboutUs, 
     Testinomial,
     Footer,
-    Booking
+    Booking,
+    Process
 }

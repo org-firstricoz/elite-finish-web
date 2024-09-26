@@ -10,7 +10,7 @@ const NavbarRight: React.FC = () => {
             <div className="ps-4">
                 <EliteButton
                     variant="primary"
-                    className="px-2 py-1 text-black"
+                    className="px-2 py-1"
                 > Sign Up! </EliteButton>
             </div>
         </div>

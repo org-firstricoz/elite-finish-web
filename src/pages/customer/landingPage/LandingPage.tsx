@@ -1,5 +1,5 @@
 import React from "react"
-import { AboutUs, Booking, Hero, Services, Testinomial } from "./components"
+import { AboutUs, Booking, Hero, Process, Services, Testinomial } from "./components"
 
 const LandingPage: React.FC = () => {
   return (
@@ -9,6 +9,7 @@ const LandingPage: React.FC = () => {
         <Services />
         <AboutUs />
         <Testinomial/>
+        <Process/>
         <Booking/>
       </div>
   )
