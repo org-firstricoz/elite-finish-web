@@ -16,7 +16,7 @@ export const AboutUs: React.FC = () => {
                     <Shape variant="triangleGreen" className=" right-[9.4rem]" />
 
                     <div className="h-[28rem] w-[28rem] bg-gray-300 z-50 ">
-                        {/* image placeholder */}
+                        <img src="/public/assets/about-img.jpg" alt="" />
                     </div>
                 </div>
                 <div className="relative md:col-span-6 col-span-12 h-full  md:py-0 py-8 flex items-center justify-center px-4 ">
@@ -26,9 +26,9 @@ export const AboutUs: React.FC = () => {
                             heading="About Us" />
 
                         <EliteLargeHeading
-                            headings={["Experience the Power", "of Digital Printing"]}
+                            headings={["Choose Elitefinish for a touch of luxury in every stroke."]}
                         />
-                        <EliteDescription heading="Lorem ipsum dolor sit amet consectetur. Non commodo mi elit ut convallis. Tempor facilisi pellentesque sem praesent tortor venenatis." />
+                        <EliteDescription heading="We specialize in transforming homes, offices, and living spaces into elegant environments that reflect your unique style and personality" />
 
                         <Link to={'/about-us'}>
                             <EliteButton>See Details</EliteButton>
