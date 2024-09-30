@@ -5,6 +5,8 @@ import Testinomial from "./Testinomial";
 import Footer from "./Footer";
 import Booking from "./Booking";
 import Process from "./Process";
+import ConnectPainter from "./ConnectPainter";
+import OurApp from "../../contact-us/components/OurApp";
 
 export{
     Hero,
@@ -13,5 +15,7 @@ export{
     Testinomial,
     Footer,
     Booking,
-    Process
+    Process,
+    ConnectPainter,
+    OurApp,
 }

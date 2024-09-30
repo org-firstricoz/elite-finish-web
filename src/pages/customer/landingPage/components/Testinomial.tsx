@@ -5,8 +5,8 @@ import React from "react"
 const Testinomial: React.FC = () => {
     return (
         <EliteWideScreenHandler>
-            <div className="min-h-screen h-auto  py-[2rem]  " >
-                <div className="grid grid-cols-12  md:px-12 px-4  ">
+            <div className=" h-auto  py-[2rem]  " >
+                <div className="grid grid-cols-12  md:px-24 px-4  ">
                     <div className="col-span-5  overflow-hidden ">
                         <img src={painterman4} alt="painterman4"
                             className="object-cover h-full w-full rounded-l-[53px]"

@@ -1,18 +1,50 @@
-import React from "react"
-import Navlinks from "./Navlinks"
-import NavbarRight from "./NavbarRight"
-import { EliteIcons } from "@/components"
-import { Link } from "react-router-dom"
+import React, { useEffect, useState } from "react";
+import Navlinks from "./Navlinks";
+import NavbarRight from "./NavbarRight";
+import { EliteIcons } from "@/components";
+import { Link } from "react-router-dom";
+import { Menu } from "lucide-react";
+import MobileNavbar from "./MobileNavbar";
+import { motion, useAnimation, useInView,  } from "framer-motion"; // Import framer-motion
 
-const Navbar: React.FC = () => {
-    return (
-        <nav className="md:px-12 px-4 py-4 bg-elite-bluelight flex justify-between items-center rounded-b-[40px]">
-            <Link to={'/'}>
-                <EliteIcons size="6rem" variant="EliteLogo" />
-            </Link>
-            <Navlinks />
-            <NavbarRight />
-        </nav>
-    )
+interface NavbarProps {
+    heroRef: React.RefObject<HTMLDivElement>; // Receiving the hero section reference
 }
-export default Navbar
+
+const Navbar: React.FC<NavbarProps> = ({ heroRef }) => {
+    const [isShowMobileNav, setIsShowMobileNav] = React.useState(false);
+    const controls = useAnimation(); 
+    const isHeroInView = useInView(heroRef, { once: false }); 
+
+    useEffect(() => {
+        if (isHeroInView) {
+            controls.start({ backgroundColor: 'rgba(255, 255, 255, 0)' }); 
+        }
+        else {
+            controls.start({ backgroundColor: '#ffffff', color: '#000000'}); // White
+        }
+    }, [isHeroInView, controls]);
+
+    return (
+        <div>
+            {isShowMobileNav && <MobileNavbar setShowNav={setIsShowMobileNav} />}
+            {/* Animated navbar */}
+            <motion.nav
+                className={`fixed top-0 z-[55]  w-full md:px-24 px-4 py-4 flex justify-between items-center transition-all duration-300`}
+                animate={controls}
+                initial={{ backgroundColor: 'rgba(255, 255, 255, 0)' }} // Initial state transparent
+            >
+                <div className="flex items-center gap-1">
+                    <Menu onClick={() => setIsShowMobileNav(!isShowMobileNav)} className="md:hidden block" size={28} strokeWidth={1.25} />
+                    <Link to={'/'}>
+                        <EliteIcons size="6rem" variant="EliteLogo" />
+                    </Link>
+                </div>
+                <Navlinks  />
+                <NavbarRight />
+            </motion.nav>
+        </div>
+    );
+};
+
+export default Navbar;

@@ -22,7 +22,7 @@ import React from 'react'
 
 const FeatureTimeline:React.FC =()=> {
   return (
-    <div className="h-auto my-28 md:px-12 px-4">
+    <div className="h-auto my-28 md:px-24 px-4">
       <EliteHeading classname='text-start font-[400]'>Commitment to quality, trust, and customer <br /> satisfaction</EliteHeading>
 
       <div className="flex justify-start ps-12 gap-8  md:block">

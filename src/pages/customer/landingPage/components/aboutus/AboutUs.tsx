@@ -2,13 +2,12 @@ import { EliteIcons, EliteWideScreenHandler } from "@/components"
 import EliteHeading from "@/components/EliteHeading"
 import { painterman2, painterman3 } from "@/constants/imagePath"
 import React from "react"
-import StatsCard from "./StatsCard"
 
 const AboutUs: React.FC = () => {
     return (
         <EliteWideScreenHandler>
 
-            <div className="w-full h-auto py-12 md:px-12 px-4">
+            <div className="w-full h-auto pt-12 md:px-24 px-4   ">
                 <div className=" flex  flex-col items-center justify-center">
                     <EliteHeading>
                         Dedicated to delivering top-quality,
@@ -34,7 +33,6 @@ const AboutUs: React.FC = () => {
                         <img src={painterman3} alt="painterman3" className="rounded-3xl  w-full aspect-video object-cover" />
                     </div>
                 </div>
-                <StatsCard/>
             </div>
         </EliteWideScreenHandler>
     )

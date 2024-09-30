@@ -13,7 +13,7 @@ import { Footer } from "@/pages/customer/landingPage";
 const Router: React.FC = () => {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <EliteScrollToTop />
       <Routes>
         <Route path="*" element={React.createElement(NotFoundPage)} />

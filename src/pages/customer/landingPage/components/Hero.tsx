@@ -1,52 +1,44 @@
-import { EliteButton, EliteWideScreenHandler } from "@/components"
-import { painterman } from "@/constants/imagePath"
+import { EliteWideScreenHandler } from "@/components"
+import { HeroPainter, PaintStroke, } from "@/constants/imagePath"
+import React from "react"
+import Navbar from "./navbar/Navbar"
+import HeroCard from "./HeroCard"
+import HeroStats from "./HeroStats"
+
 
 const Hero: React.FC = () => {
+
+    const heroRef = React.useRef<HTMLDivElement>(null)
     return (
         <EliteWideScreenHandler>
-            <div className="flex max-h-screen h-auto w-full my-12 md:px-12 px-4">
-                <div className="rounded-[58px] w-full h-full   md:px-16 sm:px-12 px-4 bg-elite-blue flex ">
-
-                    {/* Heading section */}
-                    <div className="md:w-1/2 w-full py-12 flex flex-col  items-start justify-center gap-12  bg-blue-">
+            <div ref={heroRef} className="h-screen 3xl:h-auto overflow-hidden">
+                <Navbar heroRef={heroRef} />
+                <div className="relative grid grid-cols-12 h-full ">
+                    <HeroCard/>
+                    <HeroStats/>
+                    <div className="col-span-6 pt-[10rem] md:px-24 px-4">
                         <div>
-                            <EliteButton className="flex items-center gap-2 px-3 shadow-xl" variant="secondary">
-                                <img
-                                    src="/assets/images/oldPaper.png"
-                                    className="h-4"
-                                />
-                                Hot Deals
-                            </EliteButton>
-
-                            <h1 className="text-black text-5xl font-semibold mt-4"
-                                style={{ fontSize: "clamp(1.2rem, 1vw + 3rem, 10vw)" }}
+                            <h1 className="font-bold  text-elite-black leading-tight"
+                             style={{fontSize:'clamp(0.5rem, 4vw, 6rem)'}}
                             >
-                                Sustainable painting
-                                <br />
+                                Sustainable <br />
+                                <span className="text-elite-red">painting </span>
                                 solutions
                             </h1>
-                        </div>
-                        <h1 className="text-xl font-karlaRegular font-normal">
-                            Experience premium painting services for a flawless <br />home, quality and client satisfaction.
-                        </h1>
-
-                        <div className="flex lg:gap-12 md:gap-4 sm:gap-2  gap-4">
-                            <EliteButton className=" py-4 font-karlaRegular font-normal">
-                            view all services
-                            </EliteButton>
-                            <div className="border-b-2">
-                                <p className="font-thin">Emergency Call</p>
-                                <p className="font-semibold">+1-(XX7) 120 XX2 </p>
-                            </div>
+                            <p className="text-gray-500 mt-3 "
+                            style={{fontSize:'clamp(1rem, 1.5vw, 2rem)'}}
+                            >Experience premium painting services for a flawless home, quality and client satisfaction.</p>
                         </div>
                     </div>
-
-                    {/* image section */}
-                    <div className="w-1/2  md:flex justify-end items-end hidden overflow-hidden">
-                        <img
-                            className="h-[42vw]  "
-                            src={painterman} alt="Painter" />
+                    <div className="col-span-6 h-full overflow-hidden">
+                        <div className="h-full w-full bg-red-500">
+                            <img
+                                className="object-cover  h-full w-full"
+                                src={HeroPainter}
+                                alt="image" />
+                        </div>
                     </div>
+                <img className="absolute -z-10 -bottom-[10rem] h-[25rem]" src={PaintStroke} alt="paint stroke" />
                 </div>
             </div>
         </EliteWideScreenHandler>

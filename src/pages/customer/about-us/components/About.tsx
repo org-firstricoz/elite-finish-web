@@ -6,7 +6,7 @@ import React from "react"
 const About: React.FC = () => {
   return (
 
-    <div className="min-h-screen h-auto grid grid-cols-1 md:grid-cols-12 gap-4 md:px-12 px-4 mb-12">
+    <div className="min-h-screen h-auto grid grid-cols-1 md:grid-cols-12 gap-4 md:px-24 px-4 mb-12">
       <div className="col-span-7 flex flex-col justify-evenly">
         <EliteHeading classname="text-start">EliteFinish’s success over the  <br />  years in qualitypainting services</EliteHeading>
 

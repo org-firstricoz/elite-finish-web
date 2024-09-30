@@ -5,7 +5,7 @@ import EliteHeading from "@/components/EliteHeading"
 
 const Contact: React.FC = () => {
     return (
-        <div className="md:my-24 my-9 md:px-12 px-4">
+        <div className="md:my-24 my-9 md:px-24 px-4">
             <div className="grid grid-cols-12 gap-3">
                 <div className="md:col-span-3 " />
                 <div className="md:col-span-9 col-span-12 mb-12">

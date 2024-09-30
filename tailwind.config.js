@@ -33,6 +33,8 @@ export default {
         "elite-bluelight": "#f6fbff",
         "elite-blue" : "#e7fafe",
         "elite-gray" : "#eff4f5",  
+        "elite-green" : "#72B944",
+        "elite-red": "#E24646"
       },
     },
   },

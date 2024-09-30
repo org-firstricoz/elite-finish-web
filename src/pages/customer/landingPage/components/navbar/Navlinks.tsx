@@ -32,7 +32,7 @@ const Navlinks: React.FC = () => {
       {NAVLINKS.map((link, i) => (
         <Link
         to={link.href}
-        className={cn("hover:text-elite-green py-3 text-black",
+        className={cn(" py-3 text-black ",
           { 
             " font-semibold ":
             currentUrl.endsWith(link.href),
@@ -40,7 +40,7 @@ const Navlinks: React.FC = () => {
         )}
         key={`NAVLINK_${i}`}
         >
-          <h1   className={cn("",
+          <h1   className={cn(" ",
           { 
             " font-semibold border-b-2 border-black ":
             currentUrl.endsWith(link.href),
