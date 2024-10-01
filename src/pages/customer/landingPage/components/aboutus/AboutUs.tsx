@@ -21,7 +21,7 @@ const AboutUs: React.FC = () => {
                 {/* title section */}
                 <div className="flex items-center gap-4 px-12 my-8 mt-12 ">
                     <h1 className="text-3xl font-semibold">About Us</h1>
-                    <EliteIcons variant="play" className="invert" />
+                    <EliteIcons variant="play" className="" />
                 </div>
 
                 {/* image section */}

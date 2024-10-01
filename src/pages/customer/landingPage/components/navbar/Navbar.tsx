@@ -32,12 +32,16 @@ const Navbar: React.FC<NavbarProps> = ({ heroRef }) => {
             <motion.nav
                 className={`fixed top-0 z-[55]  w-full md:px-24 px-4 py-4 flex justify-between items-center transition-all duration-300`}
                 animate={controls}
-                initial={{ backgroundColor: 'rgba(255, 255, 255, 0)' }} // Initial state transparent
+                initial={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
             >
                 <div className="flex items-center gap-1">
-                    <Menu onClick={() => setIsShowMobileNav(!isShowMobileNav)} className="md:hidden block" size={28} strokeWidth={1.25} />
+                    <Menu 
+                    onClick={() => setIsShowMobileNav(!isShowMobileNav)} 
+                    className={`md:hidden block  ${isHeroInView ? 'invert' : 'invert-0'}`} 
+                    size={28} 
+                    strokeWidth={1.25} />
                     <Link to={'/'}>
-                        <EliteIcons size="6rem" variant="EliteLogo" />
+                        <EliteIcons size="6rem" variant="EliteLogo" className={`invert md:invert-0 ${isHeroInView ? 'invert' : 'invert-0'}`}/>
                     </Link>
                 </div>
                 <Navlinks  />

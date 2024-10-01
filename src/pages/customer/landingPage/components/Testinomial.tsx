@@ -39,7 +39,7 @@ const Testinomial: React.FC = () => {
                             <div className="flex flex-col gap-1 md:text-2xl text-xl font-semibold">
                                 <h1>Donald Lucas</h1>
                                 <h1>Brooklyn, USA</h1>
-                                <EliteIcons className="self-end invert" size="2.5rem" variant="play" />
+                                <EliteIcons className="self-end " size="2.5rem" variant="play" />
                             </div>
 
                         </div>

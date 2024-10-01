@@ -11,14 +11,19 @@ const ConnectPainter: React.FC = () => {
                     <EliteHeading>Connect with house painters</EliteHeading>
                     <p className="text-center text-lg text-gray-400">Commitment to quality, trust, and customer satisfaction</p>
                 </div>
-                <div className=" flex justify-end items-center  h-[22rem] w-full rounded-2xl"
-                    style={{backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url(${HouseFull})`,
-                     backgroundPosition: 'center', 
-                     backgroundSize: 'cover' }}>
-                    <div className="w-5/12 flex flex-col gap-4">
-                        <h1 className="font-bold text-3xl text-white">Coloring Made Simple</h1>
-                        <p className="text-sm font-thin text-white">Browse the highest quality listings, apply online, sign your lease, and even pay your rent from any device.</p>
-                        <EliteButton className="">Find Out More</EliteButton>
+                <div className="relative flex justify-end items-center  h-[22rem] w-full rounded-2xl"
+                    style={{
+                        backgroundImage: `url(${HouseFull})`,
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover'
+                    }}>
+                    <div className=" absolute  w-full h-full rounded-2xl bg-gradient-to-b from-transparent to-black   md:bg-gradient-to-r md:from-transparent md:to-black    " />
+                    <div className="absolute  md:w-5/12 w-full flex flex-col items-end justify-end md:justify-center h-full md:gap-4 gap-2 pb-4 md:pb-0  ">
+                        <h1 className="font-bold md:text-3xl text-2xl text-white text-center w-full md:text-start">Coloring Made Simple</h1>
+                        <p className="md:text-sm text-xs text-center md:text-start font-thin text-white px-5 md:px-0 w-full ">Browse the highest quality listings, apply online, sign your lease, and even pay your rent from any device.</p>
+                        <div className="w-full flex justify-center md:justify-start">
+                            <EliteButton className="">Find Out More</EliteButton>
+                        </div>
                     </div>
                 </div>
             </div>
