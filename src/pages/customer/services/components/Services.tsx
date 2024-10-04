@@ -1,67 +1,27 @@
-import { EliteImageCard } from "@/components"
+import {  EliteWideScreenHandler } from "@/components"
 import EliteHeading from "@/components/EliteHeading"
-import { paintergirl, painterman2, painterman3, painterman4 } from "@/constants/imagePath"
+import { Brush } from "@/constants/imagePath"
 import React from "react"
+import Navbar from "../../landingPage/components/navbar/Navbar"
 
 const Services:React.FC = () => {
-    const dataForCard=[
-        {
-            image:paintergirl,
-            title:"interior painting",
-            time:"4",
-            price:"60"
-        },
-        {
-            image:painterman3,
-            title:"Commercial painting",
-            time:"4",
-            price:"60"
-        },
-        {
-            image:painterman2,
-            title:"interior painting",
-            time:"4",
-            price:"60"
-        },
-        
-        {
-            image:painterman4,
-            title:"interior painting",
-            time:"4",
-            price:"60"
-        },
-       
-        {
-            image:painterman2,
-            title:"interior painting",
-            time:"4",
-            price:"60"
-        },
-    ]
+   
+
+    const heroRef = React.useRef<HTMLDivElement>(null)
   return (
-    <div className="min-h-screen h-auto ">
-        <EliteHeading classname="text-left py-12">We’re highly rated painting <br /> service provider.
-        </EliteHeading>
-        <div className="grid grid-cols-12 lg:gap-16 gap-4 ">
-            {
-                dataForCard.map((item,index)=>{
-                    return(
-                        <div key={`DATA_${index}`} className="   md:col-span-4 col-span-12 place-items-center">
-                        <EliteImageCard
-                            image={item.image}
-                            title={item.title}
-                            time={item.time}
-                            price={item.price}
-                            className="lg:w-[35rem] w-full"
-                        />
-                        </div>
-                    )
-                })
-            }
-           
+    <EliteWideScreenHandler>
+        <div className="relative h-auto bg-[#F9F8FF]">
+        <div ref={heroRef} className="absolute z-40 -top-48 md:-top-24   h-[11rem] w-full"/>
+
+            <Navbar heroRef={heroRef}/>
+        <div className=" flex justify-end">
+            <img src={Brush} alt="brush" />
+            <EliteHeading classname="absolute left-[50%]  top-[65%] translate-x-[-50%] translate-y-[-50%]">
+            We’re highly rated painting service provider.
+            </EliteHeading>
         </div>
-        
-    </div>
+        </div>
+    </EliteWideScreenHandler>
   )
 }
 export default Services

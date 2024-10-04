@@ -4,7 +4,7 @@ import React from "react"
 
 const HeroCard: React.FC = () => {
     return (
-        <div className="absolute bottom-48 md:left-24  left-4 right-4 md:right-0 h-[6rem] lg:w-[57rem]  w-contain lg:px-12 sm:px-6 px-3 border-2  bg-white flex items-center  rounded-lg shadow-lg gap-4 ">
+        <div className="absolute bottom-40 md:left-24  left-4 right-4 md:right-0 h-[6rem] lg:w-[57rem]  w-contain lg:px-12 sm:px-6 px-3 border-2  bg-white flex items-center  rounded-lg shadow-lg gap-4 ">
             <span className=" absolute md:hidden  top-[-1.5rem] right-3 z-50  bg-elite-green   rounded-xl   text-white  font-bold  text-base  py-2 px-4 shadow-lg   cursor-pointer  " >
                 All services
             </span>

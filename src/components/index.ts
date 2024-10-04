@@ -6,6 +6,9 @@ import EliteImageCard from "./EliteImageCard";
 import EliteInput from "./EliteInput";
 import EliteTextArea from "./EliteTextArea";
 import EliteDropdown from "./EliteDropDown";
+import EliteServiceButton from "./EliteServiceButton";
+import EliteServiceCard from "./EliteServiceCard";
+
 export{
     EliteButton,
     EliteScrollToTop,
@@ -15,4 +18,6 @@ export{
     EliteInput,
     EliteTextArea,
     EliteDropdown,
+    EliteServiceButton,
+    EliteServiceCard,
 }

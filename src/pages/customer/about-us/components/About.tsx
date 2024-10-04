@@ -1,34 +1,42 @@
 import EliteHeading from "@/components/EliteHeading"
-import { Painterman7 } from "@/constants/imagePath"
-import { Triangle } from "lucide-react"
+import { Painterman7, PaintStroke } from "@/constants/imagePath"
 import React from "react"
+import Navbar from "../../landingPage/components/navbar/Navbar"
+import { EliteWideScreenHandler } from "@/components"
+import HeroStats from "../../landingPage/components/HeroStats"
 
 const About: React.FC = () => {
+  const heroRef = React.useRef<HTMLDivElement>(null)
   return (
+    <EliteWideScreenHandler>
 
-    <div className="min-h-screen h-auto grid grid-cols-1 md:grid-cols-12 gap-4 md:px-24 px-4 mb-12">
-      <div className="col-span-7 flex flex-col justify-evenly">
-        <EliteHeading classname="text-start">EliteFinish’s success over the  <br />  years in qualitypainting services</EliteHeading>
+      <div className="relative">
+        <Navbar heroRef={heroRef} />
+        <div className="min-h-screen h-auto w-full grid grid-cols-1 md:grid-cols-12 gap-4   pt-32">
+        <div ref={heroRef} className="absolute z-40 -top-44 md:-top-24  h-[10rem] w-full"/>
 
-        <div className="bg-elite-blue w-5/12 rounded-lg px-4 flex flex-col gap-12 py-8">
-          <Triangle className="rotate-180" fill="black" color="#000000" strokeWidth={1} />
+          <div className="  col-span-7 flex flex-col md:ps-24 ps-4 ">
+            <EliteHeading classname="text-start w-full ">
+              <h1  className="leading-snug text-[clamp(1rem,6vw,5.5rem)] md:text-[clamp(1rem,3vw,5.5rem)] w-full">
+                <span className="font-bold leading-snug">EliteFinish’s </span>
+                 success over the  <br />
+               <span className="leading-snug">years in quality painting</span>  <br />
+                services
+              </h1>
+            </EliteHeading>
+            <HeroStats className="mt-24"/>
 
-          <div className="flex flex-col gap-4">
-          <p className="text-sm">EliteFinish was founded with vision provide exceptional painting services that ensure a spotless and healthy environment for our clients.</p>
-          <div>
-            <h1>✅  Easily book painting</h1>
-            <h1> ️✅  Reminders about painting</h1>
-            <h1> ️✅  Get 24/7 on-demand care</h1>
           </div>
+          <div className="col-span-5  flex items-end ">
+            <div className="">
+              <img src={Painterman7} />
+            </div>
           </div>
         </div>
+        <img className="absolute -z-10  -bottom-[10rem] h-[25rem]" src={PaintStroke} alt="paint stroke" />
+
       </div>
-      <div className="col-span-5  flex items-end ">
-        <div className="">
-          <img src={Painterman7} />
-        </div>
-      </div>
-    </div>
+    </EliteWideScreenHandler>
   )
 }
 export default About

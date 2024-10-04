@@ -1,10 +1,12 @@
 import React from "react"
-import { Estimation, Services } from "./components"
+import { Estimation, PaintingServices, Services } from "./components"
+import ServicesSection from "./components/ServicesSection"
 
 const ServicePage:React.FC = () => {
   return (
-    <div className="md:px-24 px-4">
+    <div>
         <Services/>
+        <ServicesSection/>
         <Estimation/>
     </div>
   )

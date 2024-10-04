@@ -3,7 +3,7 @@ import { cn } from "../utils";
 
 type IconsProps = {
   className?: string;
-  variant?: "cart" | "EliteLogo" | "rightArrow" | "star" | "fb" |"insta" | "x" | "send" | "arrow" | "timer" | "play" | "paintBucket" | "waterProof";
+  variant?: "cart" | "EliteLogo" | "rightArrow" | "star" | "fb" |"insta" | "x" | "send" | "arrow" | "timer" | "play" | "paintBucket" | "waterProof" | "playWhite";
   size?: string; // Accept any size string (e.g., "2rem", "w-10 h-10")
 };
 
@@ -185,6 +185,20 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
         <img
           className="pointer-events-none object-cover"
           src="public/assets/icons/waterProof.svg"
+          alt="elite_logo"
+          style={inlineSizeStyle} // Apply the inline style for responsive size
+        />
+        {/* <div className="absolute inset-0 bg-transparent"></div> */}
+      </div>
+    );
+  }
+
+  if (variant === "playWhite") {
+    return (
+      <div className={cn("relative", className)} style={inlineSizeStyle}>
+        <img
+          className="pointer-events-none object-cover"
+          src="public/assets/icons/playWhite.svg"
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />

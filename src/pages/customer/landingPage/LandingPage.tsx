@@ -5,13 +5,15 @@ import StatsCard from "./components/aboutus/StatsCard"
 const LandingPage: React.FC = () => {
   return (
    
-      <div className="">
+      <div>
         <Hero />
-        <ConnectPainter/>
         <Services />
+        <ConnectPainter/>
         <AboutUs />
         <StatsCard/>
+        <div className="my-12">
         <Testinomial/>
+        </div>
         <Process/>
         <OurApp/>
         <Booking/>

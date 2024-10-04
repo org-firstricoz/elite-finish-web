@@ -14,7 +14,16 @@ import HouseFull from "/public/assets/images/housefull.png"
 import PlaystoreButton from "/public/assets/images/googlePlay.png"
 import AppstoreButton from "/public/assets/images/appstore.png"
 import Mobileapp from "/public/assets/images/mobile.png"
-
+import TeamMember1  from "/public/assets/images/team1.png"
+import TeamMember2  from "/public/assets/images/team2.png"
+import TeamMember3  from "/public/assets/images/team3.png"
+import Brush from "/public/assets/images/brush.png"
+import Service1 from "/public/assets/images/service1.png"
+import Service2 from "/public/assets/images/service2.png"
+import Service3 from "/public/assets/images/service3.png"
+import Wall1 from "/public/assets/images/wall1.png"
+import Wall2 from "/public/assets/images/wall2.png"
+import Wall3 from "/public/assets/images/wall3.png"
 
 export{
     painterman,
@@ -32,5 +41,15 @@ export{
     HouseFull,
     PlaystoreButton,
     AppstoreButton,
-    Mobileapp
+    Mobileapp,
+    TeamMember1,
+    TeamMember2,
+    TeamMember3,
+    Brush,
+    Service1,
+    Service2,
+    Service3,
+    Wall1,
+    Wall2,
+    Wall3,
 }

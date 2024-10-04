@@ -1,6 +1,6 @@
 import { EliteIcons, EliteWideScreenHandler } from "@/components"
 import EliteHeading from "@/components/EliteHeading"
-import { painterman2, painterman3 } from "@/constants/imagePath"
+import { painterman2, painterman3, PaintStroke } from "@/constants/imagePath"
 import React from "react"
 
 const AboutUs: React.FC = () => {

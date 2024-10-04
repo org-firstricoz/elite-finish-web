@@ -1,3 +1,4 @@
+import { EliteWideScreenHandler } from '@/components'
 import EliteHeading from '@/components/EliteHeading'
 import React from 'react'
 
@@ -20,68 +21,53 @@ import React from 'react'
 //   }
 // ]
 
-const FeatureTimeline:React.FC =()=> {
+const FeatureTimeline: React.FC = () => {
   return (
+    <EliteWideScreenHandler>
+
     <div className="h-auto my-28 md:px-24 px-4">
-      <EliteHeading classname='text-start font-[400]'>Commitment to quality, trust, and customer <br /> satisfaction</EliteHeading>
-
-      <div className="flex justify-start ps-12 gap-8  md:block">
-
-      <div className="flex md:flex-row flex-col h-[70vh] md:h-auto md:items-center md:w-full w-auto mt-12  ">
-        
-        {/*  Line */}
-        <div className="flex  flex-col md:flex-row items-center justify-between pb-4 pt-4 md:p-0   w-0.5 md:w-full h-full md:h-0.5   bg-gray-300">
-
-        {/* First Circle */}
-        <div className=" flex justify-center items-center h-3 w-3  rounded-full bg-yellow-300 -translate-y-2 md:translate-y-0"/>
-
-
-        {/* Second Circle */}
-        <div className=" flex justify-center items-center h-3 w-3  rounded-full bg-yellow-300 -translate-y-4 md:translate-y-0  md:-translate-x-[3.3rem]"/>
-
-       
-
-        {/* Third Circle */}
-        <div className=" flex justify-center items-center h-3 w-3  rounded-full bg-yellow-300  -translate-y-7 md:translate-y-0  md:-translate-x-[6.6rem]"/>
-
-        {/* Dotted Line */}
-        {/* <div className="flex-grow translate-x-[0.33rem] md:translate-x-0  w-0.5 md:w-0 h-0 md:h-.5  border-dotted md:border-b-2 border-l-2 border-black/25"></div> */}
-
-        {/* Fourth Circle */}
-        <div className='w-ful'>
-        <div className=" flex justify-center items-center h-3 w-3  rounded-full bg-yellow-300  -translate-y-10 md:translate-y-0 md:-translate-x-40  ">
-        </div>
-        </div>
-
-        </div>
-
+      <EliteHeading classname='text-center font-semibold '>Commitment to quality, trust, and <br /> customer  satisfaction</EliteHeading>
+      <div className='  md:w-6/12 w-full  m-auto my-8'>
+        <p className='text-gray-400 text-center md:text-sm text-xs'>We deploy world-class creative design, team on demand. that can design surest measure’s of success is when a client partner with more than oncebuild, scale your vision most efficient.</p>
       </div>
 
 
-{/* titles */}
-      <div className="flex flex-col md:flex-row  md:items-center items-start justify-between md:w-full w-auto md:mt-2 mt-12 pb-4">
-        <div className="text-start">
-          <h1 className="font-semibold text-xl">Quality</h1>
-          <p className="text-xs">Please Contact us use our online <br /> form to request a quote.</p>
+        {/* titles */}
+        <div className="flex flex-col md:flex-row  md:items-center items-start justify-between gap-12 md:w-full w-auto md:mt-2 mt-12 pb-4">
+          <div className="text-start flex flex-col gap-3">
+            <h1 className="font-semibold text-xl">Quality</h1>
+            <p className="text-xs">
+              we use the best practice and  <br />
+              high-quality product outstanding <br />
+              cleaning results every time.</p>
+          </div>
+          <div className="text-start flex flex-col gap-3">
+            <h1 className="font-semibold text-xl">Sustainability</h1>
+            <p className="text-xs">
+              our clients trust is our top priority. <br />
+              We ensure all our staff are <br />
+              thoroughly vetted and trained.</p>
+          </div>
+          <div className="text-start flex flex-col gap-3">
+            <h1 className="font-semibold text-xl">Trust</h1>
+            <p className="text-xs">We are committed to using eco- <br />
+              friendly products and methods to <br />
+              protect the environment.</p>
+          </div>
+          <div className="text-start flex flex-col gap-3" >
+            <h1 className="font-semibold text-xl">Clients Satisfaction</h1>
+            <p className="text-xs">
+              We listen to our customers and <br />
+              strive to exceed their expectations <br />
+              with every service-</p>
+          </div>
         </div>
-        <div className="text-start">
-          <h1 className="font-semibold text-xl">Sustainability</h1>
-          <p className="text-xs">Please Contact us use our online <br /> form to request a quote.</p>
-        </div>
-        <div className="text-start">
-          <h1 className="font-semibold text-xl">Trust</h1>
-          <p className="text-xs">Please Contact us use our online <br /> form to request a quote.</p>
-        </div>
-        <div className="text-start">
-          <h1 className="font-semibold text-xl">Clients Satisfaction</h1>
-          <p className="text-xs">Please Contact us use our online <br /> form to request a quote.</p>
-        </div>
-      </div>
 
       </div>
+    </EliteWideScreenHandler>
 
 
-    </div>
+    
   )
 }
 

@@ -40,12 +40,12 @@ const Navlinks: React.FC = () => {
         )}
         key={`NAVLINK_${i}`}
         >
-          <h1   className={cn(" ",
+          <h1 className={cn(" ",
           { 
             " font-semibold border-b-2 border-black ":
             currentUrl.endsWith(link.href),
           }
-        )} >{link.title}</h1>
+        )} >{link.title}</h1> 
         </Link>
       ))}
 

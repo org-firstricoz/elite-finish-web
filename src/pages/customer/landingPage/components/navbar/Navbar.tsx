@@ -18,10 +18,12 @@ const Navbar: React.FC<NavbarProps> = ({ heroRef }) => {
 
     useEffect(() => {
         if (isHeroInView) {
+            console.log('>>>>>>>>>>>', heroRef, isHeroInView)
             controls.start({ backgroundColor: 'rgba(255, 255, 255, 0)' }); 
         }
         else {
-            controls.start({ backgroundColor: '#ffffff', color: '#000000'}); // White
+            console.log('>>>>>>>>>>>', isHeroInView)
+            controls.start({ backgroundColor: '#ffffff', color: '#000000'}); 
         }
     }, [isHeroInView, controls]);
 

@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
     }
 
     return (
-        <div className="grid grid-cols-12 bg-black pt-12 pb-20 px-4 md:px-12">
+        <div className="grid grid-cols-12 bg-elite-dark pt-12 pb-20 px-4 md:px-12">
             <div className="md:col-span-6 col-span-12 flex flex-col  gap-16">
                 <EliteIcons className="invert" variant="EliteLogo" />
                 <div className="flex items-center    gap-4">
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                         <input type="email"
                             className="border-0 bg-elite-whiteSmoke  rounded-full focus:border-0  focus:outline-none"
                             placeholder="Example@gamail.com" />
-                        <div className="bg-elite-yellow flex justify-center items-center  bg-black rounded-full  p-3 aspect-square scale-75">
+                        <div className="bg-elite-yellow flex justify-center items-center  bg-elite-green rounded-full  p-3 aspect-square scale-75">
                             <EliteIcons size="1.8rem" variant="send" />
                         </div>
                     </div>
