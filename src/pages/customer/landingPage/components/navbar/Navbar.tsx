@@ -29,7 +29,7 @@ const Navbar: React.FC<NavbarProps> = ({ heroRef }) => {
 
     return (
         <div>
-            {isShowMobileNav && <MobileNavbar setShowNav={setIsShowMobileNav} />}
+            <MobileNavbar isShowNav={isShowMobileNav} setShowNav={setIsShowMobileNav} />
             {/* Animated navbar */}
             <motion.nav
                 className={`fixed top-0 z-[55]  w-full md:px-24 px-4 py-4 flex justify-between items-center transition-all duration-300`}
