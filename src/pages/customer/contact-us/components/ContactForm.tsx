@@ -1,4 +1,4 @@
-import { EliteButton, EliteDropdown, EliteInput, EliteTextArea } from "@/components";
+import { EliteBtnAnimWrapper, EliteButton, EliteDropdown, EliteInput, EliteTextArea } from "@/components";
 import React, { useState } from "react";
 
 const ContactForm: React.FC = () => {
@@ -21,7 +21,7 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page refresh
-    console.log("Form submitted with data:", formDetails); 
+    console.log("Form submitted with data:", formDetails);
     // TODO: Send form data to API
   };
 
@@ -72,10 +72,9 @@ const ContactForm: React.FC = () => {
         value={formDetails.message} // Controlled value
         onChange={handleChange} // Pass the handler
       />
-
-      <EliteButton variant="primary" className="rounded-lg px-12 py-4" type="submit">
-        Submit
-      </EliteButton>
+        <EliteButton variant="primary" className="rounded-lg px-12 py-4" type="submit">
+          Submit
+        </EliteButton>
     </form>
   );
 };

@@ -10,7 +10,7 @@ export default function EliteButton({ className, variant, ...props }: ButtonProp
 
 
 const buttonVariant = cva(
-    'p-3 rounded-full md:text-md text-sm hover:opacity-75 font-[600] w-fit h-fit text-black',
+    'p-3 rounded-full md:text-md text-sm hover:opacity-90 font-[600] w-fit h-fit text-black',
     {
         variants: {
             variant: {

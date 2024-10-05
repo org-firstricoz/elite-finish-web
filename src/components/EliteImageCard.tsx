@@ -2,6 +2,7 @@ import { cn } from "@/utils"
 import React from "react"
 import EliteServiceButton from "./EliteServiceButton"
 import { Heart } from "lucide-react"
+import EliteBtnAnimWrapper from "./EliteBtnAnimWrapper"
 
 interface props {
     image: string
@@ -43,8 +44,7 @@ const EliteImageCard: React.FC<props> = ({ image, title, isLike, price, classNam
                             <EliteIcons variant="timer" size="1.5rem" />
                             <h1 className="text-gray-500 text-xs font-bold">{time}/Days</h1>
                         </div> */}
-
-                        <EliteServiceButton price={price} />
+                            <EliteServiceButton price={price} />
                     </div>
                 </div>
             </div>

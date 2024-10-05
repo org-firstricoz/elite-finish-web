@@ -32,7 +32,7 @@ export default {
         
         "elite-bluelight": "#f6fbff",
         "elite-blue" : "#e7fafe",
-        "elite-gray" : "#eff4f5",  
+        "elite-gray" : "#f1f1f1",  
         "elite-green" : "#72B944",
         "elite-red": "#E24646",
         "elite-dark": "#262626"

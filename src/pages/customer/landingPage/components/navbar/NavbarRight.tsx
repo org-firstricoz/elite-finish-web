@@ -1,5 +1,6 @@
-import { EliteButton, EliteIcons } from "@/components"
+import { EliteBtnAnimWrapper, EliteButton } from "@/components"
 import React from "react"
+
 
 const NavbarRight: React.FC = () => {
     return (
@@ -8,10 +9,13 @@ const NavbarRight: React.FC = () => {
                 <EliteIcons size="22px" variant="cart" />
             </div> */}
             <div className="ps-4">
-                <EliteButton
-                    variant="primary"
-                    className="px-5 bg-elite-green "
-                > Sign Up! </EliteButton>
+                <EliteBtnAnimWrapper>
+                    <EliteButton
+                        variant="primary"
+                        className="px-5 bg-elite-green ">
+                        Sign Up!
+                    </EliteButton>
+                </EliteBtnAnimWrapper>
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-import { EliteImageCard } from "@/components"
+import { EliteBtnAnimWrapper, EliteImageCard } from "@/components"
 import React from "react"
 import { Painterman7, Wall1, Wall2, Wall3 } from "@/constants/imagePath"
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -62,8 +62,19 @@ const OtherServices: React.FC = () => {
                     )}
             </div>
             <div className="flex justify-center items-center gap-4 py-12 md:me-24 me-4">
-                <button onClick={() => scrollHandler("prev")} className="border-2 border-black p-2  rounded-full mt-4 shadow-md"><ChevronLeft /></button>
-                <button onClick={() => scrollHandler("next")} className=" p-2  rounded-full mt-4 bg-elite-green shadow-md"><ChevronRight color="white" /></button>
+                <EliteBtnAnimWrapper>
+
+                    <button onClick={() => scrollHandler("prev")} className="border-2 border-black p-2  rounded-full mt-4 shadow-md">
+                        <ChevronLeft />
+                    </button>
+                </EliteBtnAnimWrapper>
+
+                <EliteBtnAnimWrapper>
+                    <button onClick={() => scrollHandler("next")} className=" p-2  rounded-full mt-4 bg-elite-green shadow-md">
+                        <ChevronRight color="white" />
+                    </button>
+                </EliteBtnAnimWrapper>
+
             </div>
         </div>
     )

@@ -8,6 +8,8 @@ import EliteTextArea from "./EliteTextArea";
 import EliteDropdown from "./EliteDropDown";
 import EliteServiceButton from "./EliteServiceButton";
 import EliteServiceCard from "./EliteServiceCard";
+import EliteBtnAnimWrapper from "./EliteBtnAnimWrapper";
+
 
 export{
     EliteButton,
@@ -20,4 +22,5 @@ export{
     EliteDropdown,
     EliteServiceButton,
     EliteServiceCard,
+    EliteBtnAnimWrapper
 }
