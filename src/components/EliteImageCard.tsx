@@ -2,7 +2,6 @@ import { cn } from "@/utils"
 import React from "react"
 import EliteServiceButton from "./EliteServiceButton"
 import { Heart } from "lucide-react"
-import EliteBtnAnimWrapper from "./EliteBtnAnimWrapper"
 
 interface props {
     image: string

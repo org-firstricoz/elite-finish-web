@@ -1,6 +1,6 @@
 import { EliteBtnAnimWrapper, EliteImageCard } from "@/components"
 import React from "react"
-import { Painterman7, Wall1, Wall2, Wall3 } from "@/constants/imagePath"
+import {  Wall1, Wall2, Wall3 } from "@/constants/imagePath"
 import { ChevronLeft, ChevronRight } from "lucide-react";
 const OtherServices: React.FC = () => {
 

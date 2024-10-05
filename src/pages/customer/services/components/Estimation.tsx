@@ -1,4 +1,4 @@
-import { EliteButton, EliteIcons, EliteWideScreenHandler } from "@/components"
+import { EliteButton, EliteWideScreenHandler } from "@/components"
 import EliteHeading from "@/components/EliteHeading"
 import React from "react"
 

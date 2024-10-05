@@ -1,7 +1,6 @@
-import { EliteBtnAnimWrapper, EliteServiceButton, EliteServiceCard } from "@/components"
+import { EliteBtnAnimWrapper, EliteServiceCard } from "@/components"
 import { Service1, Service2, Service3 } from "@/constants/imagePath"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { title } from "process"
 import React from "react"
 
 const PaintingServices: React.FC = () => {

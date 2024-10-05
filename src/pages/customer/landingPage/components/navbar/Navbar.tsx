@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Navlinks from "./Navlinks";
 import NavbarRight from "./NavbarRight";
 import { EliteIcons } from "@/components";
