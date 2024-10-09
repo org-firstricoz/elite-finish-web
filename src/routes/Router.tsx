@@ -5,7 +5,6 @@ import { CUSTOMER_ROUTES } from "./constants";
 import { EliteScrollToTop } from "@/components";
 import { NotFoundPage } from "@/pages/customer/notFound";
 import { RootCustomerLayout } from "@/layouts";
-// import { Navbar } from "@/pages";
 import { Footer } from "@/pages/customer/landingPage";
 
 

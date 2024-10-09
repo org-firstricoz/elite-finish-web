@@ -24,6 +24,8 @@ import Service3 from "/public/assets/images/service3.png"
 import Wall1 from "/public/assets/images/wall1.png"
 import Wall2 from "/public/assets/images/wall2.png"
 import Wall3 from "/public/assets/images/wall3.png"
+import Fakelogo1 from '/public/assets/images/fakelogo1.png'
+import Fakelogo2 from '/public/assets/images/fakelogo2.png'
 
 export{
     painterman,
@@ -52,4 +54,6 @@ export{
     Wall1,
     Wall2,
     Wall3,
+    Fakelogo1,
+    Fakelogo2,
 }
