@@ -45,14 +45,14 @@ const PrivacyAndPolicy: React.FC = () => {
         "Financial Information: Bank account details, credit card information, and transaction history.",
         "Technical Data: IP address, browser type and version, time zone setting, browser plug-in types and versions, operating system, and platform."
     ];
-    
+
 
     const nonPersonalData = [
         "We may also collect non-personal data that does not identify you individually, such as:",
         "Aggregated Data: Statistical or demographic data.",
         "Behavioral Data: Information on how you use our website and services."
     ];
-    
+
 
 
 
@@ -78,12 +78,14 @@ const PrivacyAndPolicy: React.FC = () => {
                                 className="bg-red-50 rounded-2xl p-8 "
                                 heading="Personal Data"
                                 content={personalData}
+                                pointsGap={4}
                                 headingPosition="CENTER" />
 
                             <Content
                                 className="bg-red-50 rounded-2xl p-8"
                                 heading="Non Personal Data"
                                 content={nonPersonalData}
+                                pointsGap={4}
                                 headingPosition="CENTER" />
                         </div>
 
