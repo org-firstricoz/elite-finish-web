@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
             <div className="relative">
 
                 <div className="h-screen 3xl:h-auto overflow-hidden">
-                    <Navbar heroRef={heroRef} />
+                    <Navbar heroRef={heroRef} isMainHero={true} />
                     <div className="relative grid grid-cols-12 h-full ">
                         <div  ref={heroRef} className="absolute z-50 -top-32 md:bottom-0  h-[13rem] w-full" />
                         <HeroCard />
