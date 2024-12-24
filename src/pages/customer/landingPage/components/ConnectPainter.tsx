@@ -9,7 +9,7 @@ const ConnectPainter: React.FC = () => {
             <div className="h-auto  my-16 md:px-24 px-4">
                 <div className="mb-12">
                     <EliteHeading>Connect with house painters</EliteHeading>
-                    <p className="text-center text-lg text-gray-400">Commitment to quality, trust, and customer satisfaction</p>
+                    <p className="text-center md:text-lg  sm:text-base text-sm text-gray-400">Commitment to quality, trust, and customer satisfaction</p>
                 </div>
                 <div className="relative flex justify-end items-center  h-[22rem] w-full rounded-2xl"
                     style={{

@@ -7,6 +7,7 @@ import Booking from "./Booking";
 import Process from "./Process";
 import ConnectPainter from "./ConnectPainter";
 import OurApp from "../../contact-us/components/OurApp";
+import BenefitsSection from "./benefit/BenefitSection";
 
 export{
     Hero,
@@ -18,4 +19,5 @@ export{
     Process,
     ConnectPainter,
     OurApp,
+    BenefitsSection,
 }

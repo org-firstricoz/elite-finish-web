@@ -13,18 +13,18 @@ const About: React.FC = () => {
       <div className="relative">
         <Navbar heroRef={heroRef} />
         <div className="min-h-screen h-auto w-full grid grid-cols-1 md:grid-cols-12 gap-4   pt-32">
-        <div ref={heroRef} className="absolute z-40 -top-44 md:-top-24  h-[10rem] w-full"/>
+          <div ref={heroRef} className="absolute z-40 -top-44 md:-top-24  h-[10rem] w-full" />
 
           <div className="  col-span-7 flex flex-col md:ps-24 ps-4 ">
             <EliteHeading classname="text-start w-full ">
-              <h1  className="leading-snug text-[clamp(1rem,6vw,5.5rem)] md:text-[clamp(1rem,3vw,5.5rem)] w-full">
+              <div className="leading-snug text-[clamp(1rem,6vw,5.5rem)] md:text-[clamp(1rem,3vw,5.5rem)] w-full">
                 <span className="font-bold leading-snug">EliteFinish’s </span>
-                 success over the  <br />
-               <span className="leading-snug">years in quality painting</span>  <br />
+                success over the  <br />
+                <span className="leading-snug">years in quality painting</span>  <br />
                 services
-              </h1>
+              </div>
             </EliteHeading>
-            <HeroStats className="mt-24"/>
+            <HeroStats className="mt-24" />
 
           </div>
           <div className="col-span-5  flex items-end ">

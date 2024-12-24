@@ -7,10 +7,10 @@ const Process: React.FC = () => {
   return (
     <EliteWideScreenHandler>
 
-      <div className="h-auto my-12 md:px-24 px-4">
+      <div className="h-auto my-12 md:px-24 px-4 mt-24">
         <EliteHeading>Our step-by-step painting <br /> process explained</EliteHeading>
 
-        <div className="flex justify-center gap-8  md:block">
+        <div className="flex justify-center gap-8  md:block lg:mt-24">
 
           <div className="flex md:flex-row flex-col h-[70vh] md:h-auto md:items-center  justify-evenly md:w-full w-auto mt-12 md:px-12 ">
 
