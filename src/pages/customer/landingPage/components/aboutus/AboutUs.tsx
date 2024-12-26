@@ -65,7 +65,7 @@ const AboutUs: React.FC = () => {
                         <img
                             src={team}
                             alt="solarLight"
-                            className="rounded-xl" />
+                            className="rounded-xl w-full" />
                     </div>
                     <div className="lg:col-span-6 col-span-12 lg:ps-12  flex flex-col justify-center gap-2 lg:mt-0 mt-12">
                         <div className="flex items-center gap-5">

@@ -25,49 +25,58 @@ const FeatureTimeline: React.FC = () => {
   return (
     <EliteWideScreenHandler>
 
-    <div className="h-auto my-28 md:px-24 px-4">
-      <EliteHeading classname='text-center font-semibold '>Commitment to quality, trust, and <br /> customer  satisfaction</EliteHeading>
-      <div className='  md:w-6/12 w-full  m-auto my-8'>
-        <p className='text-gray-400 text-center md:text-sm text-xs'>We deploy world-class creative design, team on demand. that can design surest measure’s of success is when a client partner with more than oncebuild, scale your vision most efficient.</p>
-      </div>
+      <div className="h-auto my-28 md:px-24 px-4">
+        <EliteHeading classname='text-center font-semibold '>Commitment to quality, trust, and <br /> customer  satisfaction</EliteHeading>
+        <div className='  md:w-6/12 w-full  m-auto my-8'>
+          <p className='text-gray-400 text-center md:text-sm text-xs'>We deploy world-class creative design, team on demand. that can design surest measure’s of success is when a client partner with more than oncebuild, scale your vision most efficient.</p>
+        </div>
 
 
         {/* titles */}
-        <div className="flex flex-col md:flex-row  md:items-center items-start justify-between gap-12 md:w-full w-auto md:mt-2 mt-12 pb-4">
-          <div className="text-start flex flex-col gap-3">
-            <h1 className="font-semibold text-xl">Quality</h1>
-            <p className="text-xs">
-              we use the best practice and  <br />
-              high-quality product outstanding <br />
-              cleaning results every time.</p>
+        <div className="grid grid-cols-12 w-full   md:mt-2 mt-12 pb-4 ">
+          <div className='md:col-span-3 col-span-6 ' >
+            <div className="text-start flex flex-col gap-3">
+              <h1 className="font-semibold text-xl">Quality</h1>
+              <p className="text-xs">
+                we use the best practice and  <br />
+                high-quality product outstanding <br />
+                cleaning results every time.</p>
+            </div>
           </div>
-          <div className="text-start flex flex-col gap-3">
-            <h1 className="font-semibold text-xl">Sustainability</h1>
-            <p className="text-xs">
-              our clients trust is our top priority. <br />
-              We ensure all our staff are <br />
-              thoroughly vetted and trained.</p>
+          <div className='md:col-span-3 col-span-6 ps-2 md:ps-0'>
+            <div className="text-start flex flex-col gap-3">
+              <h1 className="font-semibold text-xl">Sustainability</h1>
+              <p className="text-xs">
+                our clients trust is our top priority. <br />
+                We ensure all our staff are <br />
+                thoroughly vetted and trained.</p>
+            </div>
           </div>
-          <div className="text-start flex flex-col gap-3">
-            <h1 className="font-semibold text-xl">Trust</h1>
-            <p className="text-xs">We are committed to using eco- <br />
-              friendly products and methods to <br />
-              protect the environment.</p>
+          <div className='md:col-span-3 col-span-6 '>
+            <div className="text-start flex flex-col gap-3">
+              <h1 className="font-semibold text-xl">Trust</h1>
+              <p className="text-xs">We are committed to using eco- <br />
+                friendly products and methods to <br />
+                protect the environment.</p>
+            </div>
           </div>
-          <div className="text-start flex flex-col gap-3" >
-            <h1 className="font-semibold text-xl">Clients Satisfaction</h1>
-            <p className="text-xs">
-              We listen to our customers and <br />
-              strive to exceed their expectations <br />
-              with every service-</p>
+          <div className='md:col-span-3 col-span-6 ps-2 md:ps-0'>
+            <div className="text-start flex flex-col gap-3" >
+              <h1 className="font-semibold text-xl">Clients Satisfaction</h1>
+              <p className="text-xs">
+                We listen to our customers and <br />
+                strive to exceed their expectations <br />
+                with every service-</p>
+            </div>
           </div>
+
         </div>
 
       </div>
     </EliteWideScreenHandler>
 
 
-    
+
   )
 }
 

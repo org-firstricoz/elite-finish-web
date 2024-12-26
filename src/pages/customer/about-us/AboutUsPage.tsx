@@ -1,6 +1,6 @@
 import React from "react"
 import { Booking, ConnectPainter, Testinomial } from "../landingPage/components"
-import { About, FeatureTimeline, Partners, Team } from "./components"
+import { About, FeatureTimeline, Partners, Team, WhoWeAre } from "./components"
 
 
 
@@ -13,6 +13,7 @@ const AboutUsPage: React.FC = () => {
       <ConnectPainter />
       <FeatureTimeline />
       <Team />
+      <WhoWeAre />
       <Partners />
       <Booking />
     </div>

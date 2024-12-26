@@ -9,7 +9,6 @@ const About: React.FC = () => {
   const heroRef = React.useRef<HTMLDivElement>(null)
   return (
     <EliteWideScreenHandler>
-
       <div className="relative">
         <Navbar heroRef={heroRef} />
         <div className="min-h-screen h-auto w-full grid grid-cols-1 md:grid-cols-12 gap-4   pt-32">

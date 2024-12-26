@@ -29,6 +29,10 @@ import Fakelogo2 from "/public/assets/images/fakelogo2.png";
 import solarLight from "/public/assets/images/solarLight.png";
 import team from "/public/assets/images/team.png";
 import sunset from "/public/assets/images/sunset.png";
+import rocket from "/public/assets/images/rocket.png";
+import bulb from "/public/assets/images/bulb.png";
+import direction from "/public/assets/images/360.png";
+
 
 export {
   painterman,
@@ -62,4 +66,7 @@ export {
   solarLight,
   team,
   sunset,
+  bulb,
+  rocket,
+  direction,
 };
