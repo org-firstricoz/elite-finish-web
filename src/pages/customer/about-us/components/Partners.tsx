@@ -1,5 +1,4 @@
 import { EliteWideScreenHandler } from "@/components"
-import EliteHeading from "@/components/EliteHeading"
 import React from "react"
 import Marque from "./Marque"
 

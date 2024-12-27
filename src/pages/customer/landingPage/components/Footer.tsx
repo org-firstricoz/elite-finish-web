@@ -1,7 +1,6 @@
 import { EliteIcons } from "@/components"
 import { Asterisk, ChevronDown } from "lucide-react";
-import
-React from "react"
+import React from "react"
 import { Link } from "react-router-dom";
 
 const Services = [
