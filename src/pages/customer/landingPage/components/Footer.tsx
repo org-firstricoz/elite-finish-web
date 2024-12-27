@@ -1,7 +1,8 @@
 import { EliteIcons } from "@/components"
-import { ChevronDown } from "lucide-react";
+import { Asterisk, ChevronDown } from "lucide-react";
 import
 React from "react"
+import { Link } from "react-router-dom";
 
 const Services = [
 
@@ -21,9 +22,10 @@ const NavigationLinks = [
     { type: "nav", title: "Contact", href: "/contact" }
 ];
 const Contact = [
-    { type: "contact", title: "New Delhi" },
-    { type: "contact", title: "+91 1234567890" },
-    { type: "contact", title: "info@warehouseonhire.com" },
+    { type: "contact", title: "New Delhi", href: "/contact-us" },
+    { type: "contact", title: "+91 1234567890", href: "/contact-us" },
+    { type: "contact", title: "info@warehouseonhire.com", href: "/contact-us" },
+    { type: "terms", title: "Terms & Conditions", href: "/term-and-conditions" },
 ]
 
 const Footer: React.FC = () => {
@@ -38,7 +40,7 @@ const Footer: React.FC = () => {
     }
 
     return (
-        <div className="grid grid-cols-12 bg-elite-dark pt-12 pb-20 px-4 md:px-12">
+        <div className="grid grid-cols-12 bg-elite-dark pt-12 pb-20 px-4 md:px-12 relative">
             <div className="md:col-span-6 col-span-12 flex flex-col  gap-16">
                 <EliteIcons className="invert" variant="EliteLogo" />
                 <div className="flex items-center    gap-4">
@@ -104,24 +106,30 @@ const Footer: React.FC = () => {
                         <h1 className="font-bold flex justify-between items-center  md:border-b-0 border-b-[1px] border-white/75 pb-1" >
                             Contact
                             <ChevronDown
-                                 className={`md:hidden ${visibleType==="contact" ? "rotate-180": "rotate-0"}`} 
+                                className={`md:hidden ${visibleType === "contact" ? "rotate-180" : "rotate-0"}`}
                                 onClick={() => isVisibleHandler("contact")} />
                         </h1>
                         <div className="flex flex-col gap-4 py-6">
                             {
                                 Contact.map((con, index) =>
-                                    <h1 key={`CONTACT${index}`}
+                                    <Link to={con.href} key={`CONTACT${index}`}
                                         className={`text-sm text-white  ${visibleType === "contact" ? "block" : "hidden md:block"}`}
 
                                     >
                                         {con.title}
-                                    </h1>
+                                    </Link>
                                 )
                             }
                         </div>
                     </div>
                 </div>
             </div>
+            <Link
+                to={'/privacy-and-policy'}
+                className="absolute flex  bottom-12 right-12 text-white text-sm" >
+                <Asterisk color="#72B944" />
+                Privacy and Policy
+            </Link>
         </div>
     )
 }
