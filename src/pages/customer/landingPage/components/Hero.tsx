@@ -12,12 +12,11 @@ const Hero: React.FC = () => {
     return (
         <EliteWideScreenHandler>
             <div className="relative">
-
-                <div className="h-screen 3xl:h-auto overflow-hidden">
+                <div className=" h-[45rem] 3xl:h-[60rem]  overflow-hidden">
                     <Navbar heroRef={heroRef} isMainHero={true} />
                     <div className="relative grid grid-cols-12 h-full ">
                         <div  ref={heroRef} className="absolute z-50 -top-32 md:bottom-0  h-[13rem] w-full" />
-                        <HeroCard />
+                        {/* <HeroCard /> */}
                         <HeroStats className="absolute bottom-12 md:px-24 px-4" />
                         <div className="md:col-span-6 hidden md:block pt-[10rem] md:ps-24 px-4 w-full">
                             <div className="w-full">

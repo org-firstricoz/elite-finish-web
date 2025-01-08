@@ -5,7 +5,7 @@ import { AboutUs, BenefitsSection, Booking, ConnectPainter, Hero, OurApp, Proces
 const LandingPage: React.FC = () => {
   return (
 
-    <div>
+    <>
       <Hero />
       <Services />
       <ConnectPainter />
@@ -14,7 +14,7 @@ const LandingPage: React.FC = () => {
       <BenefitsSection />
       <OurApp />
       <Booking />
-    </div>
+    </>
   )
 }
 export default LandingPage

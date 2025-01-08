@@ -1,5 +1,19 @@
 import React from "react";
 import { cn } from "../utils";
+import eliteLogo from "../assets/icons/EliteLogo.svg";
+import play from "../assets/icons/play.svg"
+import facebook from "../assets/icons/fb.svg"
+import instagram from "../assets/icons/insta.svg"
+import twitter from "../assets/icons/x.svg"
+import send from "../assets/icons/send.svg"
+import rightArrow from "../assets/icons/rightArrow.svg"
+import cart from "../assets/icons/cart.svg"
+import star from "../assets/icons/star.svg"
+import arrow from "../assets/icons/arrow.svg"
+import timer from "../assets/icons/timer.svg"
+import paintBucket from "../assets/icons/paintBucket.svg"
+import waterProof from "../assets/icons/waterProof.svg"
+import playWhite from "../assets/icons/playWhite.svg"
 
 type IconsProps = {
   className?: string;
@@ -15,7 +29,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/cart.svg"
+          src={cart}
           alt="cart_icon"
           style={inlineSizeStyle}
         />
@@ -28,20 +42,22 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/EliteLogo.svg"
-          alt="elite_logo"
-          style={inlineSizeStyle} // Apply the inline style for responsive size
+          src={eliteLogo} // Use imported asset
+          alt="Elite Logo"
+          style={inlineSizeStyle}
         />
-        <div className="absolute inset-0 bg-transparent"></div>
+        <div className="absolute inset-0 bg-transparent" />
       </div>
     );
   }
+
+
   if (variant === "star") {
     return (
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/star.svg"
+          src={star}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />
@@ -55,11 +71,11 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/rightArrow.svg"
+          src={rightArrow}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />
-        <div className="absolute inset-0 bg-transparent"></div>
+        <div className="absolute inset-0 bg-transparent" />
       </div>
     );
   }
@@ -69,7 +85,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/x.svg"
+          src={twitter}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />
@@ -85,7 +101,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/fb.svg"
+          src={facebook}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />
@@ -100,7 +116,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/insta.svg"
+          src={instagram}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />
@@ -114,7 +130,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/send.svg"
+          src={send}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />
@@ -128,7 +144,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/arrow.svg"
+          src={arrow}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />
@@ -142,7 +158,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/timer.svg"
+          src={timer}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />
@@ -156,7 +172,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/play.svg"
+          src={play}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />
@@ -170,7 +186,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/paintBucket.svg"
+          src={paintBucket}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />
@@ -184,7 +200,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/waterProof.svg"
+          src={waterProof}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />
@@ -198,7 +214,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover"
-          src="public/assets/icons/playWhite.svg"
+          src={playWhite}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />
@@ -212,7 +228,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
       <div className={cn("relative", className)} style={inlineSizeStyle}>
         <img
           className="pointer-events-none object-cover invert-0"
-          src="public/assets/icons/playWhite.svg"
+          src={playWhite}
           alt="elite_logo"
           style={inlineSizeStyle} // Apply the inline style for responsive size
         />

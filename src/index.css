@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "Regular" ;
-    src: local("Karla-Regular"),url('../public/assets/fonts/Karla-Regular.ttf') format('truetype');
+    src: local("Karla-Regular"),url('./assets/fonts/Karla-Regular.ttf') format('truetype');
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

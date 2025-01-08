@@ -23,7 +23,7 @@ const NavigationLinks = [
 const Contact = [
     { type: "contact", title: "New Delhi", href: "/contact-us" },
     { type: "contact", title: "+91 1234567890", href: "/contact-us" },
-    { type: "contact", title: "info@warehouseonhire.com", href: "/contact-us" },
+    { type: "contact", title: "info@elite.com", href: "/contact-us" },
     { type: "terms", title: "Terms & Conditions", href: "/term-and-conditions" },
 ]
 
@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
                             {
                                 Contact.map((con, index) =>
                                     <Link to={con.href} key={`CONTACT${index}`}
-                                        className={`text-sm text-white  ${visibleType === "contact" ? "block" : "hidden md:block"}`}
+                                        className={`text-sm text-white   ${visibleType === "contact" ? "block" : "hidden md:block"}`}
 
                                     >
                                         {con.title}
