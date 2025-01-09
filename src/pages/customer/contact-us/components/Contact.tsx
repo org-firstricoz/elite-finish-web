@@ -10,8 +10,11 @@ const Contact: React.FC = () => {
     return (
         <EliteWideScreenHandler>
             <div className="relative">
-                <div ref={heroRef} className="absolute z-40 -top-48 md:-top-32  h-[3rem] w-full"/>
+                <div ref={heroRef} className="absolute z-40 -top-48 md:-top-32  h-[3rem] w-full" />
+
+
                 <Navbar heroRef={heroRef} />
+
                 <div className="md:my-36 my-28 md:px-24 px-4 ">
                     <div className="grid grid-cols-12 gap-3">
                         <div className="md:col-span-3 " />

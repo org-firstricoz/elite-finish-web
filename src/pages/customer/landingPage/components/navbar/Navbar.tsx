@@ -55,7 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ heroRef, isMainHero }) => {
             <MobileNavbar isShowNav={isShowMobileNav} setShowNav={setIsShowMobileNav} />
             {/* Animated navbar with scroll behavior */}
             <motion.nav
-                className={`fixed top-0 z-[55]  w-full  md:px-24 px-4 py-4 flex justify-between items-center   ${!isScrollingUp ? '-translate-y-full' : 'translate-y-0'}`}
+                className={`fixed top-0 right-0 z-[55]   w-full   md:px-24 px-4 py-4 flex justify-between items-center   ${!isScrollingUp ? '-translate-y-full' : 'translate-y-0'}`}
                 animate={controls}
                 initial={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
             >
