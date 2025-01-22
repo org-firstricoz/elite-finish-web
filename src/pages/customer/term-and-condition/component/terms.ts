@@ -8,10 +8,10 @@ export const termAndCond = [
   },
   {
     id: 2,
-    title: " Clause 2",
+    title: "Service Scope",
     content: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. Ipsum viverra pretium tellus neque.Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in.  Ullamcorper suspendisse aenean leo pharetra in sit semper et. Amet quam placerat sem.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. Ipsum viverra pretium tellus neque. Ullamcorper suspendisse aenean leo pharetra in sit semper et. Amet quam placerat sem.Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. ",
+      " Elitefinish specializes in providing services such as expert painting, stylish wallpapering, and durable  waterproofing.",
+      " Services are customized based on your style preferences and requirements as discussed during the  consultation phase",
     ],
   },
   {
