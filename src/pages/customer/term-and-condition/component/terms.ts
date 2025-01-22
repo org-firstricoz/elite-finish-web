@@ -1,9 +1,9 @@
 export const termAndCond = [
   {
     id: 1,
-    title: " Clause 1",
+    title: "Acceptance of Terms",
     content: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. Ipsum viverra pretium tellus neque. Ullamcorper suspendisse aenean leo pharetra in sit semper et. Amet quam placerat sem.Viverra condimentum eget purus in. Consectetur eget id morbi amet amet, in. ",
+      "By engaging Elitefinish for its services, you agree to abide by these terms and conditions. If you do not agree,  please refrain from utilizing our services",
     ],
   },
   {
