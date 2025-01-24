@@ -11,7 +11,7 @@ import cart from "../assets/icons/cart.svg"
 import star from "../assets/icons/star.svg"
 import arrow from "../assets/icons/arrow.svg"
 import timer from "../assets/icons/timer.svg"
-import paintBucket from "../assets/icons/paintBucket.svg"
+// import paintBucket from "../assets/icons/paintBucket.svg"
 import waterProof from "../assets/icons/waterProof.svg"
 import playWhite from "../assets/icons/playWhite.svg"
 
@@ -181,19 +181,7 @@ export const EliteIcons: React.FC<IconsProps> = ({ className, variant, size }) =
     );
   }
 
-  if (variant === "paintBucket") {
-    return (
-      <div className={cn("relative", className)} style={inlineSizeStyle}>
-        <img
-          className="pointer-events-none object-cover"
-          src={paintBucket}
-          alt="elite_logo"
-          style={inlineSizeStyle} // Apply the inline style for responsive size
-        />
-        {/* <div className="absolute inset-0 bg-transparent"></div> */}
-      </div>
-    );
-  }
+
 
   if (variant === "waterProof") {
     return (
