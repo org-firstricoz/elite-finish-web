@@ -8,7 +8,7 @@ import painterman4 from "@assets/images/painterman4.png";
 import Painterman5 from "@assets/images/painterman5.png";
 import Painterman6 from "@assets/images/painterman6.png";
 import Painterman7 from "@assets/images/painterman7.png";
-import HeroPainter from "@assets/images/HeroPainter.png";
+import HeroPainter from "../assets/images/heropainter.png";
 import PaintStroke from "@assets/images/PaintStroke.png";
 import House from "@assets/images/House.png";
 import HouseFull from "@assets/images/housefull.png";
