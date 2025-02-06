@@ -110,7 +110,6 @@ const bulb = new URL("../assets/images/bulb.png", import.meta.url).href;
 const direction = new URL("../assets/images/360.png", import.meta.url).href;
 
 export {
-  MembershipImage,
   painterman,
   paintergirl,
   commercialPainter,
