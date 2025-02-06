@@ -13,7 +13,7 @@ const MainServiceCard: React.FC<MainServiceCardProps> = ({
   description,
 }) => {
   return (
-    <div className="flex flex-col  justify-center gap-2 bg-white  transition-shadow duration-300 p-4">
+    <div className="flex flex-col  justify-between gap-2 bg-white  transition-shadow duration-300 ">
       <div className="rounded-xl aspect-video overflow-hidden">
         <img
           src={image}

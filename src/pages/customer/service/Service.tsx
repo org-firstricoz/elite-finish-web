@@ -4,7 +4,7 @@ import Services from "./components/Services"
 
 const Service:React.FC = () => {
   return (
-    <div>
+    <div className="mb-24 ">
       <ServiceHero/>
       <Services/>
     </div>
