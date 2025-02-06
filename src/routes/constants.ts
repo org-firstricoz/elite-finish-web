@@ -3,6 +3,7 @@ import React from "react";
 import { AboutUsPage, ContactPage, LandingPage, ServicePage } from "@/pages";
 import { TermAndCondition } from "@/pages/customer/term-and-condition";
 import { PrivacyAndPolicy } from "@/pages/customer/privacy-policy";
+import { VendorOnboarding } from "@/pages/customer/vendor-onboarding/VendorOnboarding";
 
 
 interface RoutDocument{
@@ -14,6 +15,10 @@ const CUSTOMER_ROUTES: RoutDocument[] = [
     {
       href: "",
       page: LandingPage,
+    },
+    {
+      href: "vendor-onboarding",
+      page: VendorOnboarding,
     },
     {
       href: "about-us",

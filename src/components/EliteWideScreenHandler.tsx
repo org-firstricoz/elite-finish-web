@@ -5,7 +5,7 @@ interface Props {
 }
 const EliteWideScreenHandler: React.FC<Props> = ({ children }) => {
     return (
-        <div className="grid grid-cols-12 ">
+        <div className="grid grid-cols-12 max-w-[1900px] mx-auto">
             <div className="3xl:col-span-2" />
             <div className="col-span-12 3xl:col-span-8 relative">
                 {children}
