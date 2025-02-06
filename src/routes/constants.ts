@@ -1,6 +1,6 @@
 
 import React from "react";
-import { AboutUsPage, ContactPage, LandingPage, ServicePage } from "@/pages";
+import { AboutUsPage, ContactPage, LandingPage, ServicePage , Service} from "@/pages";
 import { TermAndCondition } from "@/pages/customer/term-and-condition";
 import { PrivacyAndPolicy } from "@/pages/customer/privacy-policy";
 import { VendorOnboarding } from "@/pages/customer/vendor-onboarding/VendorOnboarding";
@@ -28,6 +28,10 @@ const CUSTOMER_ROUTES: RoutDocument[] = [
       href: "services",
       page: ServicePage,
     },
+   {
+    href : "services/:title",
+    page : Service
+   },  
     {
       href: "contact-us",
       page: ContactPage,

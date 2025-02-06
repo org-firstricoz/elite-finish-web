@@ -13,7 +13,7 @@ const PaintingServices: React.FC = () => {
         },
         {
             image: Service2,
-            title: "Ecterior painting",
+            title: "Exterior painting",
             price: "60"
         },
         {
@@ -61,7 +61,7 @@ const PaintingServices: React.FC = () => {
                 }
             </div>
             <div className="flex justify-center items-center gap-4 pt-12 pb-6   md:me-24 me-4">
-                <EliteBtnAnimWrapper>
+                <EliteBtnAnimWrapper >
                     <button onClick={() => scrollHandler("prev")} className="border-2 border-black p-2  rounded-full mt-4 shadow-md">
                         <ChevronLeft />
                     </button>
