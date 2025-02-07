@@ -1,5 +1,4 @@
 import {  EliteWideScreenHandler } from "@/components"
-import EliteHeading from "@/components/EliteHeading"
 import { Brush } from "@/constants/imagePath"
 import React from "react"
 import Navbar from "../../landingPage/components/navbar/Navbar"
@@ -16,9 +15,10 @@ const Services:React.FC = () => {
             <Navbar heroRef={heroRef}/>
         <div className=" flex justify-end">
             <img src={Brush} alt="brush" className="md:translate-x-28 translate-x-48" />
-            <EliteHeading classname="absolute left-[50%]  sm:w-auto w-10/12  font-bold  top-[70%] translate-x-[-50%] translate-y-[-50%]">
-            We’re highly rated painting service provider.
-            </EliteHeading>
+            <div className="absolute left-[50%] sm:w-auto  w-full  font-bold  top-[70%] translate-x-[-50%] translate-y-[-50%] ">
+            <p className="3xl:text-7xl md:text-5xl sm:text-4xl xs:text-2xl text-lg text-center"> We’re highly rated painting service provider.
+            </p>
+            </div>
         </div>
         </div>
     </EliteWideScreenHandler>

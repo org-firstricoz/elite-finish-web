@@ -11,7 +11,7 @@ const About: React.FC = () => {
     <EliteWideScreenHandler>
       <div className="relative">
         <Navbar heroRef={heroRef} />
-        <div className="min-h-screen h-auto w-full grid grid-cols-1 md:grid-cols-12 gap-4   pt-32">
+        <div className="min-h-screen 2xl:min-h-[40rem] h-auto w-full grid grid-cols-1 md:grid-cols-12 gap-4   pt-32">
           <div ref={heroRef} className="absolute z-40 -top-44 md:-top-24  h-[10rem] w-full" />
 
           <div className="  col-span-7 flex flex-col md:ps-24 ps-4 ">

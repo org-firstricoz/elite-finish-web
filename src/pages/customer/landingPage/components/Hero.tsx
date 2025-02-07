@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
                                     solutions
                                 </h1>
                                 <p className="text-gray-500 mt-3 "
-                                    style={{ fontSize: 'clamp(1rem, 1.5vw, 2rem)' }}
+                                    style={{ fontSize: 'clamp(1rem, 1.4rem, 2rem)' }}
                                 >Experience premium painting services for a flawless home, quality and client satisfaction.</p>
                             </div>
                         </div>
